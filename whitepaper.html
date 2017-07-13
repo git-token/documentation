@@ -927,12 +927,24 @@ pre.editor-colors .search-results .mpe-syntax--marker.current-result .region {
   <!-- toc orderedList:0 depthFrom:1 depthTo:6 -->
 <ul>
 <li><a href="#introduction">Introduction</a></li>
-<li><a href="#github-web-hook-events">GitHub Web Hook Events</a></li>
-<li><a href="#gittokens">GitTokens</a></li>
+<li><a href="#git-contributions">Git Contributions</a>
+<ul>
+<li><a href="#github-webhook-events">GitHub Webhook Events</a>
+<ul>
+<li><a href="#configuring-a-webhook">Configuring A Webhook</a>
+<ul>
+<li><a href="#ping-event">Ping Event</a></li>
+</ul></li>
+<li><a href="#event-types">Event Types</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#gittokens">GitTokens</a>
+<ul>
 <li><a href="#contracts">Contracts</a>
 <ul>
 <li><a href="#gittokensol">GitToken.sol</a></li>
 <li><a href="#gittokenlibsol">GitTokenLib.sol</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#token-auctioneering">Token Auctioneering</a>
 <ul>
@@ -944,7 +956,7 @@ pre.editor-colors .search-results .mpe-syntax--marker.current-result .region {
 <!-- tocstop -->
 <h1 id="introduction">Introduction</h1>
 <p>Over the past 9 years GitHub has quickly become the largest host of source code in the world, managing nearly 57 million repositories and 100 million pull requests for over 26 million users. <span class="citation">(GitHub et. al. 2017)</span> As the open source movement continues to gain momentum so to does the number of individual contributors to these repositories. In some cases these repositories had over 10,000 contributors. <span class="citation">(GitHub et. al. 2016)</span></p>
-<p>At the same time, the emergence of cryptographic networks and assets, such as Ethereum, has created new protocols for sending and managing value. Ethereum is a cryptographic network for running distributed programs; allowing users of Ethereum to send peer-to-peer (P2P) transactions and interact with smart contracts deployed on the network.</p>
+<p>At the same time, the emergence of cryptographic networks and assets, such as Ethereum, has created new protocols for sending and managing value. Ethereum is a cryptographic network for running distributed programs; allowing users of Ethereum to send peer-to-peer (P2P) transactions and interact with smart contracts deployed on the global network.</p>
 <p>Ethereum smart contracts are software applications written in a high-level scripting language and compiled into byte code to be run on a version of the Ethereum Virtual Machine (EVM). The EVM interprets the byte code instruction set and translates the the program into machine code to be executed. <span class="citation">(Buterin et. al. 2017)</span></p>
 <p>GitToken combines the work flows of Git version control system leveraged by GitHub's web-based source code management platform and the Ethereum network to provide a set of open-source software tools and programs to enable any GitHub user to issue their own ERC20 tokens to incentivize and reward contributors, and monitor the fundamentals of their projects by integrating token generation with git contributions.</p>
 <p>Contributions are mapped to GitHub web hook events, and include but are not limited to, creating issues, committing code, merging branches, forking repositories, and reviewing code. GitToken provides a Docker container to deploy a server for configuring and listening to GitHub web hook events.</p>
@@ -965,15 +977,202 @@ pre.editor-colors .search-results .mpe-syntax--marker.current-result .region {
 <p><img src="file:////Users/ryan/Projects/GitToken/notes/GitHubWebHookSetup.png"></p>
 <p>GitToken, by default, sets the webhook endpoint to be <code>/gittoken</code>. This endpoint is customizable in the configuration file of the GitToken Docker service.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
 <p>Enter the url of the organization's GitHub webhook endpoint in the <code>payload URL</code> field of the webhook settings page. This is the endpoint that will receive POST requests when a contribution is made to any of an organizations' repositories.</p>
+<p>Additionally, the organization can filter for which events they would like to receive from the web hook service. The organization may wish to listen only for <code>push</code> events, or they may wish to receive individual events, or all events. GitToken provides event handling for all event types and recommends listening for all events.</p>
 <h4 id="ping-event">Ping Event</h4>
-<p>The <code>ping</code> event is the first event sent by the GitHub webhook service. Its purpose is to test the endpoint configuration and establish the keystore and contract for the GitToken server.</p>
-<p>The webhook service will display an alert if the endpoint responds with a <code>200</code> success status. A successful response will include JSON data about the keystore account, contract creation transaction receipt, and current details about the blockchain the GitToken server is connected to.</p>
+<p>The <code>ping</code> event is the first event sent by the GitHub webhook service. Its purpose is to test the endpoint configuration and, in the context of GitToken, establish the keystore and contract for the GitToken server.</p>
+<p>The webhook service will display a checkmark if the endpoint responds with a <code>200</code> success status. A successful response will include JSON data about the keystore account, contract creation transaction receipt, and current details about the Ethereum blockchain the GitToken server is connected to.</p>
 <div class="sourceCode"><pre class="editor-colors lang-javascript"><div class="line"><span class="mpe-syntax--source mpe-syntax--js"><span class="mpe-syntax--meta mpe-syntax--brace mpe-syntax--curly mpe-syntax--js"><span>{</span></span></span></div><div class="line"><span class="mpe-syntax--source mpe-syntax--js"><span>&nbsp;&nbsp;</span><span class="mpe-syntax--string mpe-syntax--quoted mpe-syntax--double mpe-syntax--js"><span class="mpe-syntax--punctuation mpe-syntax--definition mpe-syntax--string mpe-syntax--begin mpe-syntax--js"><span>&quot;</span></span><span>accounts</span><span class="mpe-syntax--punctuation mpe-syntax--definition mpe-syntax--string mpe-syntax--end mpe-syntax--js"><span>&quot;</span></span></span><span class="mpe-syntax--keyword mpe-syntax--operator mpe-syntax--assignment mpe-syntax--js"><span>:</span></span><span>&nbsp;</span><span class="mpe-syntax--meta mpe-syntax--brace mpe-syntax--curly mpe-syntax--js"><span>{</span></span><span>&nbsp;</span><span class="mpe-syntax--keyword mpe-syntax--operator mpe-syntax--spread mpe-syntax--js"><span>...</span></span><span>&nbsp;</span><span class="mpe-syntax--meta mpe-syntax--brace mpe-syntax--curly mpe-syntax--js"><span>}</span></span><span class="mpe-syntax--meta mpe-syntax--delimiter mpe-syntax--object mpe-syntax--comma mpe-syntax--js"><span>,</span></span></span></div><div class="line"><span class="mpe-syntax--source mpe-syntax--js"><span>&nbsp;&nbsp;</span><span class="mpe-syntax--string mpe-syntax--quoted mpe-syntax--double mpe-syntax--js"><span class="mpe-syntax--punctuation mpe-syntax--definition mpe-syntax--string mpe-syntax--begin mpe-syntax--js"><span>&quot;</span></span><span>contract</span><span class="mpe-syntax--punctuation mpe-syntax--definition mpe-syntax--string mpe-syntax--end mpe-syntax--js"><span>&quot;</span></span></span><span class="mpe-syntax--keyword mpe-syntax--operator mpe-syntax--assignment mpe-syntax--js"><span>:</span></span><span>&nbsp;</span><span class="mpe-syntax--meta mpe-syntax--brace mpe-syntax--curly mpe-syntax--js"><span>{</span></span><span>&nbsp;</span><span class="mpe-syntax--keyword mpe-syntax--operator mpe-syntax--spread mpe-syntax--js"><span>...</span></span><span>&nbsp;</span><span class="mpe-syntax--meta mpe-syntax--brace mpe-syntax--curly mpe-syntax--js"><span>}</span></span><span class="mpe-syntax--meta mpe-syntax--delimiter mpe-syntax--object mpe-syntax--comma mpe-syntax--js"><span>,</span></span></span></div><div class="line"><span class="mpe-syntax--source mpe-syntax--js"><span>&nbsp;&nbsp;</span><span class="mpe-syntax--string mpe-syntax--quoted mpe-syntax--double mpe-syntax--js"><span class="mpe-syntax--punctuation mpe-syntax--definition mpe-syntax--string mpe-syntax--begin mpe-syntax--js"><span>&quot;</span></span><span>blockchain</span><span class="mpe-syntax--punctuation mpe-syntax--definition mpe-syntax--string mpe-syntax--end mpe-syntax--js"><span>&quot;</span></span></span><span class="mpe-syntax--keyword mpe-syntax--operator mpe-syntax--assignment mpe-syntax--js"><span>:</span></span><span>&nbsp;</span><span class="mpe-syntax--meta mpe-syntax--brace mpe-syntax--curly mpe-syntax--js"><span>{</span></span><span>&nbsp;</span><span class="mpe-syntax--keyword mpe-syntax--operator mpe-syntax--spread mpe-syntax--js"><span>...</span></span><span>&nbsp;</span><span class="mpe-syntax--meta mpe-syntax--brace mpe-syntax--curly mpe-syntax--js"><span>}</span></span></span></div><div class="line"><span class="mpe-syntax--source mpe-syntax--js"><span class="mpe-syntax--meta mpe-syntax--brace mpe-syntax--curly mpe-syntax--js"><span>}</span></span></span></div></pre></div>
 <p>Otherwise, the webhook service will display an error message with either a <code>400</code> or <code>500</code> error status.</p>
 <p>Upon receiving a ping event, the GitToken server checks if a keystore and GitToken contract already exist. If either does not exist, the GitToken server attempts to create the keystore and deploy a contract with the configured parameters provided to the GitToken server instance.</p>
 <p>One common reason a contract may not deploy may be due to inadequate funds in the Ethereum account tied to the keystore. For the purpose of the GitToken alpha on the Ropsten testnet a faucet can be used to provide the minimum amount necessary to create a contract.</p>
 <p>The server will respond with an error message if the contract could not be created.</p>
 <h3 id="event-types">Event Types</h3>
+<table>
+<colgroup>
+<col width="33%">
+<col width="16%">
+<col width="50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Event</th>
+<th>Reward Value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">*</td>
+<td>0</td>
+<td align="left">Any time any event is triggered (Wildcard Event).</td>
+</tr>
+<tr class="even">
+<td align="left">commit_comment</td>
+<td>250</td>
+<td align="left">Any time a Commit is commented on.</td>
+</tr>
+<tr class="odd">
+<td align="left">create</td>
+<td>2500</td>
+<td align="left">Any time a Branch or Tag is created.</td>
+</tr>
+<tr class="even">
+<td align="left">delete</td>
+<td>0</td>
+<td align="left">Any time a Branch or Tag is deleted.</td>
+</tr>
+<tr class="odd">
+<td align="left">deployment</td>
+<td>5000</td>
+<td align="left">Any time a Repository has a new deployment created from the API.</td>
+</tr>
+<tr class="even">
+<td align="left">deployment_status</td>
+<td>100</td>
+<td align="left">Any time a deployment for a Repository has a status update from the API.</td>
+</tr>
+<tr class="odd">
+<td align="left">fork</td>
+<td>5000</td>
+<td align="left">Any time a Repository is forked.</td>
+</tr>
+<tr class="even">
+<td align="left">gollum</td>
+<td>250</td>
+<td align="left">Any time a Wiki page is updated.</td>
+</tr>
+<tr class="odd">
+<td align="left">installation</td>
+<td>250</td>
+<td align="left">Any time a GitHub App is installed or uninstalled.</td>
+</tr>
+<tr class="even">
+<td align="left">installation_repositories</td>
+<td>1000</td>
+<td align="left">Any time a repository is added or removed from an installation.</td>
+</tr>
+<tr class="odd">
+<td align="left">issue_comment</td>
+<td>250</td>
+<td align="left">Any time a comment on an issue is created, edited, or deleted.</td>
+</tr>
+<tr class="even">
+<td align="left">issues</td>
+<td>500</td>
+<td align="left">Any time an Issue is assigned, unassigned, labeled, unlabeled, opened, edited, milestoned, demilestoned, closed, or reopened.</td>
+</tr>
+<tr class="odd">
+<td align="left">label</td>
+<td>100</td>
+<td align="left">Any time a Label is created, edited, or deleted.</td>
+</tr>
+<tr class="even">
+<td align="left">marketplace_purchase</td>
+<td>0</td>
+<td align="left">Any time a user purchases, cancels, or changes their GitHub Marketplace plan.</td>
+</tr>
+<tr class="odd">
+<td align="left">member</td>
+<td>1000</td>
+<td align="left">Any time a User is added or removed as a collaborator to a Repository, or has their permissions modified.</td>
+</tr>
+<tr class="even">
+<td align="left">membership</td>
+<td>1000</td>
+<td align="left">Any time a User is added or removed from a team. Organization hooks only.</td>
+</tr>
+<tr class="odd">
+<td align="left">milestone</td>
+<td>15000</td>
+<td align="left">Any time a Milestone is created, closed, opened, edited, or deleted.</td>
+</tr>
+<tr class="even">
+<td align="left">organization</td>
+<td>1000</td>
+<td align="left">Any time a user is added, removed, or invited to an Organization. Organization hooks only.</td>
+</tr>
+<tr class="odd">
+<td align="left">org_block</td>
+<td>0</td>
+<td align="left">Any time an organization blocks or unblocks a user. Organization hooks only.</td>
+</tr>
+<tr class="even">
+<td align="left">page_build</td>
+<td>500</td>
+<td align="left">Any time a Pages site is built or results in a failed build.</td>
+</tr>
+<tr class="odd">
+<td align="left">project_card</td>
+<td>250</td>
+<td align="left">Any time a Project Card is created, edited, moved, converted to an issue, or deleted.</td>
+</tr>
+<tr class="even">
+<td align="left">project_column</td>
+<td>50</td>
+<td align="left">Any time a Project Column is created, edited, moved, or deleted.</td>
+</tr>
+<tr class="odd">
+<td align="left">project</td>
+<td>1000</td>
+<td align="left">Any time a Project is created, edited, closed, reopened, or deleted.</td>
+</tr>
+<tr class="even">
+<td align="left">public</td>
+<td>10000</td>
+<td align="left">Any time a Repository changes from private to public.</td>
+</tr>
+<tr class="odd">
+<td align="left">pull_request_review_comment</td>
+<td>250</td>
+<td align="left">Any time a comment on a pull request's unified diff is created, edited, or deleted (in the Files Changed tab).</td>
+</tr>
+<tr class="even">
+<td align="left">pull_request_review</td>
+<td>100</td>
+<td align="left">Any time a pull request review is submitted, edited, or dismissed.</td>
+</tr>
+<tr class="odd">
+<td align="left">pull_request</td>
+<td>1000</td>
+<td align="left">Any time a pull request is assigned, unassigned, labeled, unlabeled, opened, edited, closed, reopened, or synchronized (updated due to a new push in the branch that the pull request is tracking). Also any time a pull request review is requested, or a review request is removed.</td>
+</tr>
+<tr class="even">
+<td align="left">push</td>
+<td>1000</td>
+<td align="left">Any Git push to a Repository, including editing tags or branches. Commits via API actions that update references are also counted. This is the default event.</td>
+</tr>
+<tr class="odd">
+<td align="left">repository</td>
+<td>2500</td>
+<td align="left">Any time a Repository is created, deleted (organization hooks only), made public, or made private.</td>
+</tr>
+<tr class="even">
+<td align="left">release</td>
+<td>5000</td>
+<td align="left">Any time a Release is published in a Repository.</td>
+</tr>
+<tr class="odd">
+<td align="left">status</td>
+<td>200</td>
+<td align="left">Any time a Repository has a status update from the API</td>
+</tr>
+<tr class="even">
+<td align="left">team</td>
+<td>2000</td>
+<td align="left">Any time a team is created, deleted, modified, or added to or removed from a repository. Organization hooks only</td>
+</tr>
+<tr class="odd">
+<td align="left">team_add</td>
+<td>2000</td>
+<td align="left">Any time a team is added or modified on a Repository.</td>
+</tr>
+<tr class="even">
+<td align="left">watch</td>
+<td>500</td>
+<td align="left">Any time a User stars a Repository.</td>
+</tr>
+</tbody>
+</table>
 <h1 id="gittokens">GitTokens</h1>
 <h2 id="contracts">Contracts</h2>
 <h3 id="gittoken.sol"><a href="https://github.com/git-token/contracts/blob/master/contracts/GitToken.sol">GitToken.sol</a></h3>
