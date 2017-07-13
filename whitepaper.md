@@ -9,9 +9,9 @@ references:
     year: 2017
     month: 7
     day: 12
-- id: vitalik2017
+- id: Buterin2017
   author:
-    - family: Vitalik et. al.
+    - family: Buterin et. al.
   title: A Next-Generation Smart Contract and Decentralized Application Platform
   container-title: 'https://github.com/ethereum/wiki/wiki/White-Paper'
   accessed:
