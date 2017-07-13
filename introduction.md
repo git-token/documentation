@@ -9,9 +9,9 @@ references:
     year: 2017
     month: 7
     day: 12
-- id: vitalik2017
+- id: Buterin2017
   author:
-    - family: Vitalik et. al.
+    - family: Buterin et. al.
   title: A Next-Generation Smart Contract and Decentralized Application Platform
   container-title: 'https://github.com/ethereum/wiki/wiki/White-Paper'
   accessed:
@@ -45,7 +45,7 @@ Git is a popular version control system (VCS). GitHub is a web-based source code
 
 The emergence of cryptographic networks and assets, such as Ethereum, has created new protocols for sending and managing value. Ethereum is a cryptographic network for running distributed programs; allowing users of Ethereum to send peer-to-peer (P2P) transactions and interact with smart contracts deployed on the network.
 
-Ethereum smart contracts are software applications written in a high-level scripting language and compiled into byte code to be run on a version of the Ethereum Virtual Machine (EVM). The EVM interprets the byte code instruction set and translates the the program into machine code to be executed. [@vitalik2017]
+Ethereum smart contracts are software applications written in a high-level scripting language and compiled into byte code to be run on a version of the Ethereum Virtual Machine (EVM). The EVM interprets the byte code instruction set and translates the the program into machine code to be executed. [@Buterin2017]
 
 GitToken provides a set of open-source software tools and programs to allow any organization using GitHub to issue a token representing a contribution made toward an organizations' git repositories.
 
