@@ -4,4 +4,4 @@ GitToken provides a Docker image and Dockerfile for configuring and listening to
 
 Request data is parsed and signed by the GitToken middleware handler, and sent to the GitToken contract to create and distribute tokens to contributors.
 
-@import "github_webhook_events.md"
+@import "../webhook/github_webhook_events.md"

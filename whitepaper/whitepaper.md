@@ -53,7 +53,7 @@ references:
     * [GitHub Webhook Events](#github-webhook-events)
         * [Configuring A Webhook](#configuring-a-webhook)
             * [Ping Event](#ping-event)
-        * [Event Types](#event-types)
+        * [Event Types & Reward Values](#event-types-reward-values)
 * [GitTokens](#gittokens)
     * [Contracts](#contracts)
         * [GitToken.sol](#gittokensol)
@@ -65,11 +65,6 @@ references:
 <!-- tocstop -->
 
 @import "introduction.md"
-@import "contributions.md"
-@import "gittokens.md"
-@import "contracts.md"
-@import "auctioneering.md"
-@import "exchange.md"
-@import "analysis.md"
-@import "authentication.md"
+@import "../contributions/contributions.md"
+@import "../gittoken/index.md"
 @import "references.md"

@@ -4,7 +4,7 @@
 
 Under the **settings** tab in an organization's GitHub dashboard, click **Webhook** on the left navigation section and add a new webhook.
 
-<img src="./GitHubWebHookSetup.png" >
+<img src="../images/GitHubWebHookSetup.png" >
 
 GitToken, by default, sets the webhook endpoint to be `/gittoken`. This endpoint is customizable in the configuration file of the GitToken Docker service. [^GTKWebHook]
 
