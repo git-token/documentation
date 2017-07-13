@@ -16,6 +16,15 @@
 
 ---
 references:
+- id: octoverse
+  author:
+    - family: GitHub et. al.
+  title: The state of the Octoverse 2016
+  container-title: 'https://octoverse.github.com/'
+  accessed:
+    year: 2016
+    month: 12
+    day: 31
 - id: github2017
   author:
     - family: GitHub et. al.
@@ -25,9 +34,9 @@ references:
     year: 2017
     month: 7
     day: 12
-- id: vitalik2017
+- id: Buterin2017
   author:
-    - family: Vitalik et. al.
+    - family: Buterin et. al.
   title: A Next-Generation Smart Contract and Decentralized Application Platform
   container-title: 'https://github.com/ethereum/wiki/wiki/White-Paper'
   accessed:
@@ -55,15 +64,14 @@ references:
 ---
 # Introduction
 
-GitToken combines the work flows of Git version control system (VCS), GitHub's web-based source code management platform, and the Ethereum network to issue ERC20 tokens, incentivize and reward contributions, and evaluate the fundamentals of projects by integrating token generation with git contributions.
 
-Git is a popular version control system (VCS). GitHub is a web-based source code management (SCM) platform using Git. GitHub is the largest host of source code in the world, managing nearly 57 million repositories and 100 million pull requests for almost 20 million users. [@github2017]
+Over the past 9 years GitHub has quickly become the largest host of source code in the world, managing nearly 57 million repositories and 100 million pull requests for over 26 million users. [@github2017] As the open source movement continues to gain momentum so to does the number of individual contributors to these repositories. In some cases these repositories had over 10,000 contributors. [@octoverse]
 
-The emergence of cryptographic networks and assets, such as Ethereum, has created new protocols for sending and managing value. Ethereum is a cryptographic network for running distributed programs; allowing users of Ethereum to send peer-to-peer (P2P) transactions and interact with smart contracts deployed on the network.
+At the same time, the emergence of cryptographic networks and assets, such as Ethereum, has created new protocols for sending and managing value. Ethereum is a cryptographic network for running distributed programs; allowing users of Ethereum to send peer-to-peer (P2P) transactions and interact with smart contracts deployed on the network.
 
-Ethereum smart contracts are software applications written in a high-level scripting language and compiled into byte code to be run on a version of the Ethereum Virtual Machine (EVM). The EVM interprets the byte code instruction set and translates the the program into machine code to be executed. [@vitalik2017]
+Ethereum smart contracts are software applications written in a high-level scripting language and compiled into byte code to be run on a version of the Ethereum Virtual Machine (EVM). The EVM interprets the byte code instruction set and translates the the program into machine code to be executed. [@Buterin2017]
 
-GitToken provides a set of open-source software tools and programs to allow any organization using GitHub to issue a token representing a contribution made toward an organizations' git repositories.
+GitToken combines the work flows of Git version control system leveraged by GitHub's web-based source code management platform and the Ethereum network to provide a set of open-source software tools and programs to enable any GitHub user to issue their own ERC20 tokens to incentivize and reward contributors, and monitor the fundamentals of their projects by integrating token generation with git contributions.
 
 Contributions are mapped to GitHub web hook events, and include but are not limited to, creating issues, committing code, merging branches, forking repositories, and reviewing code. GitToken provides a Docker container to deploy a server for configuring and listening to GitHub web hook events.
 
@@ -80,7 +88,7 @@ The Ethereum ecosystem has adopted a de facto contract interface for transacting
 
 # Git Contributions
 
-GitToken provides a Docker image and Dockerfile for configuring and listening to incoming GitHub contribution events via hypertext transfer protocol (HTTP) POST requests made by an organization's GitHub webhook service.
+GitToken provides a Docker image and Dockerfile for configuring and listening to incoming GitHub contribution events via HTTP POST requests made by an organization's GitHub webhook service.
 
 Request data is parsed and signed by the GitToken middleware handler, and sent to the GitToken contract to create and distribute tokens to contributors.
 
@@ -90,7 +98,7 @@ Request data is parsed and signed by the GitToken middleware handler, and sent t
 
 > We’ll send a POST request to the URL below with details of any subscribed events. You can also specify which data format you’d like to receive. More information can be found in our [developer documentation](https://developer.github.com/webhooks/ ).
 
-Under the **settings** tab in an organizations' GitHub dashboard, click **Webhook** on the left navigation section and add a new webhook.
+Under the **settings** tab in an organization's GitHub dashboard, click **Webhook** on the left navigation section and add a new webhook.
 
 <img src="./GitHubWebHookSetup.png" >
 
@@ -114,13 +122,15 @@ The webhook service will display an alert if the endpoint responds with a `200` 
 
 Otherwise, the webhook service will display an error message with either a `400` or `500` error status.
 
-Upon receiving a ping event, the GitToken server checks if a keystore and GitToken contract already exist. If either of those do not exist, the GitToken server attempts to create the keystore and deploy a contract with the configured parameters provided to the GitToken server instance.
+Upon receiving a ping event, the GitToken server checks if a keystore and GitToken contract already exist. If either does not exist, the GitToken server attempts to create the keystore and deploy a contract with the configured parameters provided to the GitToken server instance.
 
-Common reasons a contract may not deploy may be due to inadequate funds of the Ethereum account tied to the keystore. A faucet is provided in the testnet and beta launch to provide the minimum amount necessary to create a contract.
+One common reason a contract may not deploy may be due to inadequate funds in the Ethereum account tied to the keystore. For the purpose of the GitToken alpha on the Ropsten testnet a faucet can be used to provide the minimum amount necessary to create a contract.
 
 The server will respond with an error message if the contract could not be created.
 
-####
+### Event Types
+
+
 
 [^GTKWebHook]: e.g., the webhook endpoint for [GitToken](https://github.com/git-token )'s repositories is `https://GitToken.org/gittoken`
   
