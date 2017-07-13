@@ -1,6 +1,6 @@
 # Git Contributions
 
-GitToken provides a Docker image and Dockerfile for configuring and listening to incoming GitHub contribution events via hypertext transfer protocol (HTTP) POST requests made by an organization's GitHub webhook service.
+GitToken provides a Docker image and Dockerfile for configuring and listening to incoming GitHub contribution events via HTTP POST requests made by an organization's GitHub webhook service.
 
 Request data is parsed and signed by the GitToken middleware handler, and sent to the GitToken contract to create and distribute tokens to contributors.
 
@@ -10,7 +10,7 @@ Request data is parsed and signed by the GitToken middleware handler, and sent t
 
 > We’ll send a POST request to the URL below with details of any subscribed events. You can also specify which data format you’d like to receive. More information can be found in our [developer documentation](https://developer.github.com/webhooks/).
 
-Under the **settings** tab in an organizations' GitHub dashboard, click **Webhook** on the left navigation section and add a new webhook.
+Under the **settings** tab in an organization's GitHub dashboard, click **Webhook** on the left navigation section and add a new webhook.
 
 <img src="./GitHubWebHookSetup.png" >
 
@@ -36,7 +36,7 @@ Otherwise, the webhook service will display an error message with either a `400`
 
 Upon receiving a ping event, the GitToken server checks if a keystore and GitToken contract already exist. If either does not exist, the GitToken server attempts to create the keystore and deploy a contract with the configured parameters provided to the GitToken server instance.
 
-Common reasons a contract may not deploy may be due to inadequate funds of the Ethereum account tied to the keystore. A faucet is provided in the testnet and beta launch to provide the minimum amount necessary to create a contract.
+One common reason a contract may not deploy may be due to inadequate funds in the Ethereum account tied to the keystore. For the purpose of the GitToken alpha on the Ropsten testnet a faucet can be used to provide the minimum amount necessary to create a contract.
 
 The server will respond with an error message if the contract could not be created.
 

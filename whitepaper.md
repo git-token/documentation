@@ -36,6 +36,15 @@ references:
     year: 2017
     month: 7
     day: 11
+- id: octoverse
+  author:
+    - family: GitHub et. al.
+  title: The state of the Octoverse 2016
+  container-title: 'https://octoverse.github.com/'
+  accessed:
+    year: 2016
+    month: 12
+    day: 31
 ---
 <!-- toc orderedList:0 depthFrom:1 depthTo:6 -->
 
