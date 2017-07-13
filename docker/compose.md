@@ -7,6 +7,7 @@
 version: '3.0'
 services:
   gittoken:
+    # Define an environment variables file
     env_file:
       - /gittoken-server/gittoken.env
     ports:

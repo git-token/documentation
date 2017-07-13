@@ -6,7 +6,7 @@
 
 GitToken provides a NodeJS Express application for handling GitHub web hook events and distributing tokens for git contributions.
 
-The image is intended to be run with `docker-compose` where an [environment variables](https://docs.docker.com/compose/env-file/) (`.env`) file is provided to the `docker-compose.yml` `env_file` field. The `.env` file customizes the values for the GitToken server instance.
+The image is intended to be run with `docker-compose` where an [environment variables](https://docs.docker.com/compose/environment-variables/) (`.env`) file is provided to the `docker-compose.yml` `env_file` field. The `.env` file customizes the values for the GitToken server instance.
 
 ```bash
 # Example environment variables (.env) file
