@@ -55,10 +55,7 @@ At the same time, the emergence of cryptographic networks and assets, such as Et
 
 Ethereum smart contracts are software applications written in a high-level scripting language and compiled into byte code to be run on a version of the Ethereum Virtual Machine (EVM). The EVM interprets the byte code instruction set and translates the the program into machine code to be executed. [@Buterin2017]
 
-
-GitToken combines the work flows of Git version control system leveraged by GitHub's web-based source code management platform and the Ethereum network to allow any GitHub user to issue their own ERC20 tokens to incentivize and reward contributors, and monitor the fundamentals of their projects by integrating token generation with git contributions.
-
-GitToken provides a set of open-source software tools and programs to allow any organization using GitHub to issue a token representing a contribution made toward an organizations' git repositories.
+GitToken combines the work flows of Git version control system leveraged by GitHub's web-based source code management platform and the Ethereum network to provide a set of open-source software tools and programs to enable any GitHub user to issue their own ERC20 tokens to incentivize and reward contributors, and monitor the fundamentals of their projects by integrating token generation with git contributions.
 
 Contributions are mapped to GitHub web hook events, and include but are not limited to, creating issues, committing code, merging branches, forking repositories, and reviewing code. GitToken provides a Docker container to deploy a server for configuring and listening to GitHub web hook events.
 
