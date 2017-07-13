@@ -49,13 +49,16 @@ references:
 <!-- toc orderedList:0 depthFrom:1 depthTo:6 -->
 
 * [Introduction](#introduction)
-* [GitHub Web Hook Events](#github-web-hook-events)
+* [Git Contributions](#git-contributions)
+  * [GitHub Webhook Events](#github-webhook-events)
+    * [Configuring a Webhook](#configuring-a-webhook)
+      * [Ping Event](#ping-event)
+    * [Event Types](#event-types)
 * [GitTokens](#gittokens)
   * [Contracts](#contracts)
-    * [GitToken.sol](#gittokensol)
-    * [GitTokenLib.sol](#gittokenlibsol)
+    * [GitToken.sol](#gittokensolhttpsgithubcomgit-tokencontractsblobmastercontractsgittokensol)
+    * [GitTokenLib.sol](#gittokenlibsolhttpsgithubcomgit-tokencontractsblobmastercontractsgittokenlibsol)
 * [Token Auctioneering](#token-auctioneering)
-    * [Evaluation of Open Source Projects](#evaluation-of-open-source-projects)
 * [Authentication](#authentication)
 * [References](#references)
 
@@ -66,6 +69,7 @@ references:
 @import "gittokens.md"
 @import "contracts.md"
 @import "auctioneering.md"
+@import "exchange.md"
 @import "analysis.md"
 @import "authentication.md"
 @import "references.md"
