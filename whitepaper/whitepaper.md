@@ -46,25 +46,9 @@ references:
     month: 12
     day: 31
 ---
-<!-- toc orderedList:0 depthFrom:1 depthTo:6 -->
-
-* [Introduction](#introduction)
-* [Git Contributions](#git-contributions)
-    * [GitHub Webhook Events](#github-webhook-events)
-        * [Configuring A Webhook](#configuring-a-webhook)
-            * [Ping Event](#ping-event)
-        * [Event Types & Reward Values](#event-types-reward-values)
-* [GitTokens](#gittokens)
-    * [Contracts](#contracts)
-        * [GitToken.sol](#gittokensol)
-        * [GitTokenLib.sol](#gittokenlibsol)
-* [Token Auctioneering](#token-auctioneering)
-* [Authentication](#authentication)
-* [References](#references)
-
-<!-- tocstop -->
+[TOC]
 
 @import "introduction.md"
-@import "../contributions/contributions.md"
 @import "../gittoken/index.md"
+@import "../contributions/contributions.md"
 @import "references.md"
