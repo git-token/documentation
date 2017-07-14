@@ -4,11 +4,11 @@ To receive tokens, contributors must verify her/his identity with the organizati
 
 <img height="600" align="right" src="../images/GitHubOAuth.png" >
 
-The GitToken NodeJS Express application provides a GitHub OAuth endpoint for contributors to authenticate themselves with the organization's GitToken contract instance.
+The GitToken server instance provides a GitHub OAuth endpoint for contributors to authenticate themselves with the organization's GitToken contract instance.
 
 Additionally, GitToken provides a web application user interface to enable contributors to easily verify their identity.
 
-By default authentication requests are handled by the GitToken server service at the `/auth/github` endpoint.[^GitTokenAuth]
+By default authentication requests are handled by the GitToken server at the `/auth/github` endpoint.[^GitTokenAuth]
 
 A contributor verifies her/his identity by associating an Ethereum address to her/his OAuth GitHub credentials using the provided GitToken web application or desktop user interface(s).
 
@@ -22,9 +22,9 @@ To configure GitHub Open Authorization for a GitToken server instance, click **s
 
 Create a new OAuth application for the GitToken application. The configuration requires an **Authorization Callback URL**. This URL is provided by the GitToken server instance at the endpoint `/auth/github/callback`.[^GitTokenCallback]
 
-Enter the full callback URL for the organization in the provided field. For example, https://your_organization.website/auth/github/callback
+Enter the full callback URL for the organization in the provided field. For example, `https://organization.website/auth/github/callback`
 
-<img align="center" src="../images/GitHubOAuthSetup.png">
+<img src="../images/GitHubOAuthSetup.png">
 
 [^GitTokenAuth]: e.g., The authentication endpoint for [GitToken](https://GitToken.org)'s GTK contract is [`https://GitToken.org/auth/github`](https://GitToken.org/auth/github).
 [^GitTokenCallback]: e.g., The authorization callback url endpoint for [GitToken](https://GitToken.org)'s GTK contract is [`https://GitToken.org/auth/github/callback`](https://GitToken.org/auth/github/callback).

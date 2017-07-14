@@ -25,9 +25,9 @@ services:
     # Use the GitToken Docker image to build from
     image: "gittoken/express-server:v1"
     # Define an environment variables file path
-    # relative to the Docker machine file system
+    # relative to the local directory of the docker-compose.yml file
     env_file:
-      - /gittoken-server/gittoken.env
+      - gittoken.env
     # Expose port 1324 for the Express Server
     # Expose port 1325 for the WebSocket Server
     ports:
