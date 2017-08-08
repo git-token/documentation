@@ -64,6 +64,12 @@ GitToken retains the right to modify and cancel our services. GitToken service c
 
 GitToken will make public announcements and provide an adequate period of time for you to retrieve any personal data that may be lost or compromised in the event of a service cancellation.
 
+## Changes to Terms of Services
+
+GitToken may from time to time update its terms of service as deemed appropriate by the GitToken team. Though these changes will often be minor we will provide notification to users of material changes in these terms of service at least 30 days prior to the date the change takes effect by posting a notice on our website, GitHub repositories, or publishing an event notifying users of the change.
+
+For changes to these terms that do not affect your rights, we encourage visitors to check this page frequently.
+
 ## Regulatory Compliance
 
 GitToken asserts tokens issued using GitToken Services are not financial securities.
@@ -123,9 +129,3 @@ By accepting these ToS and using these Services, you agree to:
 * assume liability of all financial risk of using GitToken Services, including complete loss of ETH, tokens, or any digital asset used in GitToken Services;
 
 * our right to terminate these Services to you for any reason;
-
-## Changes to our Terms of Service
-
-GitToken may from time to time update its terms of service as deemed appropriate by the GitToken team. Though these changes will often be minor we will provide notification to users of material changes in these terms of service at least 30 days prior to the date the change takes effect by posting a notice on our website or publishing an event notifying users of the change.
-
-For changes to these terms that do not affect your rights, we encourage visitors to check this page frequently.
