@@ -20,7 +20,9 @@ GitToken provides software for automating Ethereum token issuances, distribution
 
 GitToken token offerings may only take place on GitToken provided user interfaces. The purpose of GitToken is to better incentivize and reward contributors, automatically manage Ethereum token distributions, and provide new access to funding for software development.
 
-## GitHub Account Information
+## Privacy of User Information
+
+### GitHub Account Information
 
 GitToken is not affiliated with GitHub.
 
