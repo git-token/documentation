@@ -26,7 +26,7 @@ GitToken token offerings may only take place on GitToken provided user interface
 
 GitToken uses MetaMask as the default Ethereum provider for interacting and verifying your Ethereum address with GitToken contract. GitToken associates a contributor's GitHub username with his/her MetaMask Ethereum address.
 
-Users will hold harmless and indemnify GitToken and its contributors from any claim, suit or action arising from or related to the use of MetaMask and its terms of service, including any liability or expense arising from claims, losses, damages, suits, judgments, litigation costs and attorneys’ fees.
+Users will hold harmless and indemnify GitToken and its contributors from any claim, suit or action arising from or related to the use of MetaMask and its terms of service, including, but not limited to, any liability or expense arising from claims, losses, damages, suits, judgments, litigation costs and attorneys’ fees.
 
 ### GitHub Account Information
 
@@ -42,7 +42,7 @@ If your organization uses private repositories, this may violate your organizati
 
 Consult with your organization before using GitToken.
 
-Users will hold harmless and indemnify GitToken and its contributors from any claim, suit or action arising from or related to the use of GitHub and its terms of service, including any liability or expense arising from claims, losses, damages, suits, judgments, litigation costs and attorneys’ fees.
+Users will hold harmless and indemnify GitToken and its contributors from any claim, suit or action arising from or related to the use of GitHub and its terms of service, including, but not limited to, any liability or expense arising from claims, losses, damages, suits, judgments, litigation costs and attorneys’ fees.
 
 ## Organizations Using GitToken
 
@@ -56,7 +56,7 @@ In cases where the organization may wish to watch only certain repositories or e
 
 If you are using GitToken Services as an agent on behalf of an organization, the organization in which you represent thereby accepts these terms.
 
-It will hold harmless and indemnify GitToken and its contributors from any claim, suit or action arising from or related to the use of the Services or violation of these ToS, including any liability or expense arising from claims, losses, damages, suits, judgments, litigation costs and attorneys’ fees.
+It will hold harmless and indemnify GitToken and its contributors from any claim, suit or action arising from or related to the use of the Services or violation of these ToS, including, but not limited to, any liability or expense arising from claims, losses, damages, suits, judgments, litigation costs and attorneys’ fees.
 
 ## Modifying and Cancellation of Services
 
