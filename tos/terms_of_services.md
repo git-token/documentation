@@ -22,6 +22,10 @@ GitToken token offerings may only take place on GitToken provided user interface
 
 ## Privacy of User Information
 
+### MetaMask Ethereum Provider
+
+GitToken uses MetaMask as the default Ethereum provider for interacting and verifying your Ethereum address with GitToken contract. GitToken associates a contributor's GitHub username with his/her MetaMask Ethereum address.
+
 ### GitHub Account Information
 
 GitToken is not affiliated with GitHub.
