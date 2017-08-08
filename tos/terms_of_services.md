@@ -1,7 +1,7 @@
 # GitToken Terms of Service
 Effective Date: 8/7/2017, 3:57:00 PM
 
-## Thank You for using GitToken software!
+## Thank You for Using GitToken Software!
 
 GitToken ("GTK") uses GitToken products and services ("Services"). These Services are provided as open-source software by contributors at the GitHub organization Uniform Resource Locator ("URL") https://github.com/git-token.
 
@@ -20,8 +20,6 @@ GitToken provides software for automating Ethereum token issuances, distribution
 
 GitToken token offerings may only take place on GitToken provided user interfaces. The purpose of GitToken is to better incentivize and reward contributors, automatically manage Ethereum token distributions, and provide new access to funding for software development.
 
-## Privacy of User Information
-
 ### MetaMask Ethereum Provider
 
 GitToken uses MetaMask as the default Ethereum provider for interacting and verifying your Ethereum address with GitToken contract. GitToken associates a contributor's GitHub username with his/her MetaMask Ethereum address.
@@ -30,19 +28,21 @@ Users will hold harmless and indemnify GitToken and its contributors from any cl
 
 ### GitHub Account Information
 
+GitToken collects public GitHub profile information including the profile username, email, photo URL, and associated public Ethereum address. While we do not actively disclose this data with any third parties, it is publicly available on the Ethereum blockchain and as such users have no guarantee of privacy.
+
+We do not store passwords of any kind, you are responsible for all passwords associated with the service. We are not responsible for any loss of profile access associated with lost password.
+
 GitToken is not affiliated with GitHub.
 
-GitToken Services requests access to your public GitHub information using Open Authorization ("OAuth").
+GitToken Services requests access to your public GitHub information using Open Authorization ("OAuth"). This information is used by the GitToken software to verify your identity with the organization's GitToken contract and map token distributions to your Ethereum public address based on your GitHub username.
 
-This information is used by the GitToken software to verify your identity with the organization's GitToken contract and map token distributions to your Ethereum public address based on your GitHub username.
+If your organization uses private repositories, this may violate your organization's policies as a result of some information being made public.Consult with your organization before using GitToken.
 
-By using GitToken software, your GitHub contributions, username, and email are made public in the Ethereum blockchain. You agree to not impersonate or misrepresent your GitHub identity.
+All GitToken users agree to hold harmless and indemnify GitToken and its contributors from any claim, suit or action arising from or related to the use of GitHub and its terms of service, including, but not limited to, any liability or expense arising from claims, losses, damages, suits, judgments, litigation costs and attorneys’ fees.
 
-If your organization uses private repositories, this may violate your organization's policies as a result of some information being made public.
+## Protecting Your Wallets and Tokens
 
-Consult with your organization before using GitToken.
-
-Users will hold harmless and indemnify GitToken and its contributors from any claim, suit or action arising from or related to the use of GitHub and its terms of service, including, but not limited to, any liability or expense arising from claims, losses, damages, suits, judgments, litigation costs and attorneys’ fees.
+All GitToken users should read [this guide](https://myetherwallet.groovehq.com/knowledge_base/topics/protecting-yourself-and-your-funds) by MyEtherWallet on How to Prevent Loss & Theft. GitToken strongly advises all users to be proactive about security. GitToken will not be held liable for any loss of tokens occurring from situations including but not limited to accidentally disclosing information to malicious third parties (i.e. phishing attempts), forgetting or misplacing private keys, or sending tokens to an incorrect address.
 
 ## Organizations Using GitToken
 
@@ -123,3 +123,9 @@ By accepting these ToS and using these Services, you agree to:
 * assume liability of all financial risk of using GitToken Services, including complete loss of ETH, tokens, or any digital asset used in GitToken Services;
 
 * our right to terminate these Services to you for any reason;
+
+## Changes to our Terms of Service
+
+GitToken may from time to time update its terms of service as deemed appropriate by the GitToken team. Though these changes will often be minor we will provide notification to users of material changes in these terms of service at least 30 days prior to the date the change takes effect by posting a notice on our website or publishing an event notifying users of the change.
+
+For changes to these terms that do not affect your rights, we encourage visitors to check this page frequently.
