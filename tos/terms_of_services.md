@@ -28,15 +28,15 @@ Users will hold harmless and indemnify GitToken and its contributors from any cl
 
 ### GitHub Account Information
 
-GitToken collects public GitHub profile information including the profile username, email, photo URL, and associated public Ethereum address. While we do not actively disclose this data with any third parties, it is publicly available on the Ethereum blockchain and as such users have no guarantee of privacy.
+GitToken is not affiliated with GitHub.
 
 We do not store passwords of any kind, you are responsible for all passwords associated with the service. We are not responsible for any loss of profile access associated with lost password.
 
-GitToken is not affiliated with GitHub.
-
 GitToken Services requests access to your public GitHub information using Open Authorization ("OAuth"). This information is used by the GitToken software to verify your identity with the organization's GitToken contract and map token distributions to your Ethereum public address based on your GitHub username.
 
-If your organization uses private repositories, this may violate your organization's policies as a result of some information being made public.Consult with your organization before using GitToken.
+If your organization uses private repositories, this may violate your organization's policies as a result of some information being made public. Consult with your organization before using GitToken.
+
+We do not actively disclose this data with any third parties, however, it is publicly available on the Ethereum blockchain and as such users have no guarantee of privacy.
 
 All GitToken users agree to hold harmless and indemnify GitToken and its contributors from any claim, suit or action arising from or related to the use of GitHub and its terms of service, including, but not limited to, any liability or expense arising from claims, losses, damages, suits, judgments, litigation costs and attorneys’ fees.
 
