@@ -42,7 +42,7 @@ GitToken provides software that enables organizations to issue nominal amounts o
 
 Organizations may set custom values for token distributions corresponding to GitHub events, or alternatively can use the default values.
 
-In cases where the organization may wish to watch only certain repostories or events, they may select those options using the GitHub organization settings webpage on the GitHub official website.
+In cases where the organization may wish to watch only certain repositories or events, they may select those options using the GitHub organization settings webpage on the GitHub official website.
 
 If you are using GitToken Services as an agent on behalf of an organization, the organization in which you represent thereby accepts these terms.
 
@@ -92,7 +92,7 @@ Extended Limited Liability
 
 WHEN PERMITTED BY LAW, GITTOKEN, AND GITTOKEN CONTRIBUTORS, WILL NOT BE RESPONSIBLE FOR LOST PROFITS, REVENUES, OR DATA, FINANCIAL LOSSES OR INDIRECT, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES.
 
-TO THE EXTENT PERMITTED BY LAW, GITTOKEN, AND ITS CONTRIBUTORS, WILL NOT BE RESPONSIBLE FOR ANY CLAIM, DAMAGE, IMPLIED WARRANTIES, OR FINE FOR ANY TOKEN RESEMEBLING A FINANCIAL SECURITY FOR ANY REASON.
+TO THE EXTENT PERMITTED BY LAW, GITTOKEN, AND ITS CONTRIBUTORS, WILL NOT BE RESPONSIBLE FOR ANY CLAIM, DAMAGE, IMPLIED WARRANTIES, OR FINE FOR ANY TOKEN THAT MAY RESEMBLE A FINANCIAL SECURITY FOR ANY REASON.
 
 TO THE EXTENT PERMITTED BY LAW, THE TOTAL LIABILITY OF GITTOKEN, AND ITS CONTRIBUTORS, FOR ANY CLAIMS UNDER THESE TERMS, INCLUDING FOR ANY IMPLIED WARRANTIES, IS LIMITED TO THE AMOUNT YOU PAID US TO USE THE SERVICES (OR, IF WE CHOOSE, TO SUPPLYING YOU THE SERVICES AGAIN).
 
