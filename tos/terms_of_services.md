@@ -16,11 +16,43 @@ Versions of this ToS can be found [here](https://github.com/git-token/documentat
 
 ## Use of GitToken Services
 
-All organizations using GitToken Services retain intellectual property rights over their software. GitToken provides software that enables organizations to issue nominal amounts of Ethereum tokens in exchange for contributions in organizations' GitHub repositories.
+GitToken provides software for automating Ethereum token issuances, distributions, and offerings that correspond to GitHub contribution events, such as a pull request or milestone being reached.
 
-GitToken also provides automated token offerings that correspond to GitHub contribution events, such as a milestone being reached. These offerings may only take place on GitToken provided user interfaces. The purpose of GitToken is to provide an alternative funding mechanism to software development groups.
+GitToken token offerings may only take place on GitToken provided user interfaces. The purpose of GitToken is to better incentivize and reward contributors, automatically manage Ethereum token distributions, and provide new access to funding for software development.
 
-GitToken provides these Services in the hopes that users who benefit from the software provided by the organization will fund the software's continued development.
+## GitHub Account Information
+
+GitToken is not affiliated with GitHub.
+
+GitToken Services requests access to your public GitHub information using Open Authorization ("OAuth").
+
+This information is used by the GitToken software to verify your identity with the organization's GitToken contract and map token distributions to your Ethereum public address based on your GitHub username.
+
+By using GitToken software, your GitHub contributions, username, and email are made public in the Ethereum blockchain. You agree to not impersonate or misrepresent your GitHub identity.
+
+If your organization uses private repositories, this may violate your organization's policies as a result of some information being made public.
+
+Consult with your organization before using GitToken.
+
+## Organizations Using GitToken
+
+All organizations using GitToken Services retain intellectual property rights over their software.
+
+GitToken provides software that enables organizations to issue nominal amounts of Ethereum tokens in exchange for contributions in organizations' GitHub repositories.
+
+Organizations may set custom values for token distributions corresponding to GitHub events, or alternatively can use the default values.
+
+In cases where the organization may wish to watch only certain repostories or events, they may select those options using the GitHub organization settings webpage on the GitHub official website.
+
+If you are using GitToken Services as an agent on behalf of an organization, the organization in which you represent thereby accepts these terms.
+
+It will hold harmless and indemnify GitToken and its contributors from any claim, suit or action arising from or related to the use of the Services or violation of these ToS, including any liability or expense arising from claims, losses, damages, suits, judgments, litigation costs and attorneys’ fees.
+
+## Modifying and Cancellation of Services
+
+GitToken retains the right to modify and cancel our services. GitToken service changes can be found in the change log for the service release. Any features can be requested by opening an issue on GitToken's GitHub repository pages.
+
+GitToken will make public announcements and provide an adequate period of time for you to retrieve any personal data that may be lost or compromised in the event of a service cancellation.
 
 ## Regulatory Compliance
 
@@ -43,28 +75,6 @@ GitToken, and its contributors, will not be held accountable for any claim, dama
 In the event that GitToken receives notice pertaining to the determination of GitToken issued tokens resembling financial securities from financial regulation authorities (e.g. Securities & Exchange Commission), GitToken contributors will determine next steps, including ceasing access to parties in affected jurisdictions and applying for exemption where its reasonable to continue operations.
 
 GitToken is obligated to comply and aid in the enforcement of all applicable laws. In the event that law enforcement requests help in investigating illegal activity, GitToken will support such investigations.
-
-## GitHub Account Information
-
-GitToken is not affiliated with GitHub.
-
-GitToken Services requests access to your public GitHub information using Open Authorization ("OAuth").
-
-This information is used by the GitToken software to verify your identity with the organization's GitToken contract and map token distributions to your Ethereum public address based on your GitHub username.
-
-By using GitToken software, your GitHub contributions, username, and email are made public in the Ethereum blockchain. You agree to not impersonate or misrepresent your GitHub identity.
-
-If your organization uses private repositories, this may violate your organization's policies as a result of some information being made public.
-
-Consult with your organization before using GitToken.
-
-## Organizations Using GitToken
-
-In cases where the organization may wish to watch only certain repositories or events, they may select those options using the GitHub organization settings webpage on the GitHub official website.
-
-If you are using GitToken Services as an agent on behalf of an organization, the organization in which you represent thereby accepts these terms.
-
-It will hold harmless and indemnify GitToken and its contributors from any claim, suit or action arising from or related to the use of the Services or violation of these ToS, including any liability or expense arising from claims, losses, damages, suits, judgments, litigation costs and attorneys’ fees.
 
 ## Copyright, Services Liabilities & Limitations
 
