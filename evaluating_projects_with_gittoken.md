@@ -1,10 +1,10 @@
 Initial Coin Offerings, ICOs, token, commodity, security, or paid API key offerings, really whatever you want to call them, have become a massive global phenomenon. According to many in the blockchain community we are at peak ICO, with plenty of projects raising over 7 figures for little more than a whitepaper and over $1.8 billion in total funds raised. However, amidst the chaos, there are some teams are keeping focused and designing protocols that will fundamentally transform how value is generated, tracked, and transferred in the 21st century.
 
-So how can we make sure that the teams being funded amidst the ICO hype are those building the future and not those building their bank accounts? To get started let's look at how the current process works.
+So how can we make sure that the teams being funded amidst the ICO hype are those building the future and not those building their bank accounts? Let's explore a few options.
 
-## The Process for Evaluating ICOs Today
+## Conducting Proper Due Diligence on ICOs
 
-The ecosystem around ICOs has evolved significantly over the past two years, with an ever increasing list of ICO news and research outlets emerging. But at its core the process for evaluating ICOs involves looking at the same three metrics any early-stage investor looks at: team, product, and market
+The ecosystem around ICOs has evolved significantly over the past two years, with an ever increasing list of ICO news and research outlets emerging. But at its core the process for evaluating ICOs involves looking at the same three metrics any early-stage investor looks at: team, product, and market.
 
 ### Team
 
@@ -38,7 +38,7 @@ The fundamental importance of market in the discussion of product-market fit has
 - When a lousy team meets a great market, market wins.
 - When a great team meets a great market, something special happens.
 
-This is why investors like to talk about funnels. How big is the market? How will you acquire users? What will keep those users coming back? Did my assistant make that reservation for Dorsia like I asked him to?
+In Marc Andreesen's terms above, markets can drive even a mediocre team to make great products - products that meet the customer's needs. Incidentally, this is why investors like to talk about funnels. How big is the market? How will you acquire users? What will keep those users coming back? Did my assistant make that reservation for Dorsia like I asked him to?
 
 ### Crypto-Specific Considerations
 
@@ -58,18 +58,16 @@ Examples of bad token economics.
 
 ## What’s Missing
 
-So from the above it sounds like we have at least some idea of how to evaluate token-based projects. But we still haven't answered our initial question: How can we stop scammers (intentional or not) from using ICOs to fill their bank accounts? Or more accurately, how is it that scammers are able to use ICOs to fill their bank accounts?
+Although anyone could read through the above, or read through one of the many other posts outlining some of the basic things to look at in evaluating an early-stage project we don't believe it's smart or necessarily fair to assume everyone will conduct their own due diligence.
 
-The simplest argument is that although we understand as a community how to do our due dilligence on projects (this isn't the first post to discuss how to evaluate ICOs and certainly not the first to discuss how to evaluate early-stage projects) we simply don't do it. It's easy in this case to pass the buck and say that, even if some investors aren't particularly bright, the market is working as intended.
+While it might sound satisfying to some to say that, even if scams are occurring, the market is working as intended we view this as fundamentally misguided. Not only is the current system incredibly inefficient from a capital allocation perspective, it poses an existential reputational risk to any blockchain that allows for interoperable token ecosystems.
 
-But as we see it taking this approach is not only dangerous, it is an existential risk to the blockchain ecosystem, from both an economic and regulatory perspective. This is in part because of just how liquid capital is in the blockchain ecosystem.
+In the traditional venture capital world the lack of liquidity around shares makes it difficult for founders to make a quick exit even if they’re as sexy as and getting as much serious traction as Pied Piper. But in the blockchain world where tokens are instantly liquid the idea of an instant payday can actually distract from building the underlying protocol or application. In fact, it's well known that [companies that raise too much money too quickly fail](https://www.fastcompany.com/3057027/the-case-against-startups-raising-as-much-money-as-humanly-possible) more often. The promise of an instant payday also creates other perverse incentives, some of which William Mougayar outlined in [a post on ICOs earlier this summer](https://medium.com/@wmougayar/10-things-i-dont-like-about-icos-5c84c19875eb).
 
-In the traditional venture capital world the lack of liquidity around shares makes it difficult for founders to make a quick exit even if they’re as sexy as and getting as much serious traction through click farms as Pied Piper. But in the blockchain world tokens are instantly liquid upon generation, so when a project is ‘hot’ it can reap the rewards of that traction instantly.
+Fundamentally, we need a way outside of founder promises to ensure that vesting schedules occur on the basis of tangible milestones attached to real work. And we believe that the real work involved in building protocols and applications is in writing code. This is a problem we think GitToken can help solve.
 
-While that liquidity - the kind that comes from an instantly accessible global marketplace - is kind of a core point of blockchains, it also creates perverse incentives. It’s no wonder then that in [his article earlier this summer](https://medium.com/@wmougayar/10-things-i-dont-like-about-icos-5c84c19875eb) many of William Mougayar’s concerns about ICOs centered around precisely this problem. Put broadly, if you raise 7 figures for a project and give it to people up front, they tend to slow down or even stop working. This is why your salary isn't paid the first day you go to work and why [studies have shown](https://www.fastcompany.com/3057027/the-case-against-startups-raising-as-much-money-as-humanly-possible) raising too much money too quickly makes it more likely for companies to fail. Generally the sweet spot for funding maxes out at 18 months. Enough time to breath for 6 months, work diligently for 6 months, and sweat for 6 months.
-
-Proof of code: Using GitToken to Tie Cash to Contributions
+## Proof of code: Using GitToken to Tie Cash to Contributions
 
 GitToken allows any project to show its commitment to code by tying its fundraising to specific GitHub events and milestones. Contributors on the other hand can be assured that their donations are being put directly towards tangible roadmap items without any middleman allocating the funds.
 
-GitToken for Open Source Projects
+### GitToken for Open Source Projects
