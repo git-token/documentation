@@ -1,6 +1,6 @@
 Initial Coin Offerings, ICOs, token, commodity, security, or paid API key offerings, really whatever you want to call them, have become a massive global phenomenon. According to many in the blockchain community we are at peak ICO, with plenty of projects raising over 7 figures for little more than a whitepaper and over $1.8 billion in total funds raised. However, amidst the chaos, there are some teams are keeping focused and designing protocols that will fundamentally transform how value is generated, tracked, and transferred in the 21st century.
 
-So how can we make sure that the teams being funded amidst the ICO hype are those building the future and not those building their bank accounts?
+So how can we make sure that the teams being funded amidst the ICO hype are those building the future and not those building their bank accounts? To get started let's look at how the current process works.
 
 ## The Process for Evaluating ICOs Today
 
@@ -44,30 +44,32 @@ This is why investors like to talk about funnels. How big is the market? How wil
 
 While there is a lot of similarity between contributing to early stage projects and contributing to token-based projects, there are still some key differences. The most glaring of these differences is the introduction of tokens. The presence of tokens introduces a few different questions.
 
-1) What does the token do?
+**1) What does the token do?**
 
 This might be hard for some to hear but not everything needs to be a token. However, with the current hype around ICOs everything is becoming one. Understanding what a token does and why those functions can’t be managed by an existing token (most often ETH given that most ICOs are ERC20 tokens) is critical.
 
-2) What are the token economics?
+**2) What are the token economics?**
 
 What are token economics?
 Examples of good token economics.
 Examples of bad token economics.
 
-3)  
+**3)
 
 ## What’s Missing
 
-So we’ve talked about the basics of how projects are typically evaluated and some of the additional considerations required for evaluating tokenized projects, but we still haven’t answered our initial question: How do we stop scammers (intentional or not) from using ICOs to fill their bank accounts.
+So from the above it sounds like we have at least some idea of how to evaluate token-based projects. But we still haven't answered our initial question: How can we stop scammers (intentional or not) from using ICOs to fill their bank accounts? Or more accurately, how is it that scammers are able to use ICOs to fill their bank accounts?
 
-In the traditional venture capital world the lack of liquidity around shares makes it difficult for founders to make a quick exit even if they’re as sexy as and getting as much serious traction through click farms as Pied Piper. But in the blockchain world tokens are instantly liquid upon generation, so when a project is ‘hot’ it can reap the rewards of that traction instantly. While that liquidity - the kind that comes from an instantly accessible global marketplace - is kind of a core point of blockchains, it also creates perverse incentives. It’s no wonder then that in [his article earlier this summer](https://medium.com/@wmougayar/10-things-i-dont-like-about-icos-5c84c19875eb) many of William Mougayar’s concerns about ICOs centered around this problem.
+The simplest argument is that although we understand as a community how to do our due dilligence on projects (this isn't the first post to discuss how to evaluate ICOs and certainly not the first to discuss how to evaluate early-stage projects) we simply don't do it. It's easy in this case to pass the buck and say that, even if some investors aren't particularly bright, the market is working as intended.
 
-But not only are the perverse incentives that come from instant liquidity only for investors but for founders. As [studies have shown](https://www.fastcompany.com/3057027/the-case-against-startups-raising-as-much-money-as-humanly-possible), raising too much money too quickly creates apathy and leads to companies that perform worse than their less well funded counterparts. Generally the sweet spot for funding maxes out at 18 months. Enough time to breath for 6 months, work diligently for 6 months, and sweat for 6 months.
+But as we see it taking this approach is not only dangerous, it is an existential risk to the blockchain ecosystem, from both an economic and regulatory perspective. This is in part because of just how liquid capital is in the blockchain ecosystem.
+
+In the traditional venture capital world the lack of liquidity around shares makes it difficult for founders to make a quick exit even if they’re as sexy as and getting as much serious traction through click farms as Pied Piper. But in the blockchain world tokens are instantly liquid upon generation, so when a project is ‘hot’ it can reap the rewards of that traction instantly.
+
+While that liquidity - the kind that comes from an instantly accessible global marketplace - is kind of a core point of blockchains, it also creates perverse incentives. It’s no wonder then that in [his article earlier this summer](https://medium.com/@wmougayar/10-things-i-dont-like-about-icos-5c84c19875eb) many of William Mougayar’s concerns about ICOs centered around precisely this problem. Put broadly, if you raise 7 figures for a project and give it to people up front, they tend to slow down or even stop working. This is why your salary isn't paid the first day you go to work and why [studies have shown](https://www.fastcompany.com/3057027/the-case-against-startups-raising-as-much-money-as-humanly-possible) raising too much money too quickly makes it more likely for companies to fail. Generally the sweet spot for funding maxes out at 18 months. Enough time to breath for 6 months, work diligently for 6 months, and sweat for 6 months.
 
 Proof of code: Using GitToken to Tie Cash to Contributions
 
 GitToken allows any project to show its commitment to code by tying its fundraising to specific GitHub events and milestones. Contributors on the other hand can be assured that their donations are being put directly towards tangible roadmap items without any middleman allocating the funds.
 
 GitToken for Open Source Projects
-
-https://blog.producthunt.com/what-do-investors-look-for-when-evaluating-a-startup-3023a65c4160
