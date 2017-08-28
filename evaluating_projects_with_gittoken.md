@@ -1,10 +1,38 @@
 Initial Coin Offerings, ICOs, token, commodity, security, or paid API key offerings, really whatever you want to call them, have become a massive global phenomenon. According to many in the blockchain community we are at peak ICO, with plenty of projects raising over 7 figures for little more than a whitepaper and over $1.8 billion in total funds raised. However, amidst the chaos, there are some teams are keeping focused and designing protocols that will fundamentally transform how value is generated, tracked, and transferred in the 21st century.
 
-So how can we make sure that the teams being funded amidst the ICO hype are those building the future and not those building their bank accounts? Let's explore a few options.
+So how can we make sure that the teams being funded amidst the ICO hype are those building the future and not those building their bank accounts?
 
-## Conducting Proper Due Diligence on ICOs
+First, let's answer the question of why we should care.
 
-The ecosystem around ICOs has evolved significantly over the past two years, with an ever increasing list of ICO news and research outlets emerging. But at its core the process for evaluating ICOs involves looking at the same three metrics any early-stage investor looks at: team, product, and market.
+## A Market For Lemons
+
+While it might sound satisfying to some to say that, even if it's funding low-quality projects more often than not, the market is working as intended we view this as fundamentally misguided. Not only is the current system incredibly inefficient from a capital allocation perspective, it poses an existential risk to any blockchain that allows for token ecosystems. As outlined in George Akerlof's famous paper "The Market for Lemons: Quality Uncertainty and the Market Mechanism" the presence of inferior goods along with a few other conditions will eventually drive a market out of existence. The four core criteria for a lemon market are as follows:
+
+1) An asymmetry of information;
+
+2) An incentive for sellers to pass off low-quality products as high quality;
+
+3) A continuum of seller qualities exist; and
+
+4) No recourse for purchases of low-quality products.
+
+While we believe it is easy to see that ICO markets satisfy these criteria, [this article](https://medium.com/@avtarsehra/icos-and-economics-of-lemon-markets-96638e86b3b2) by Avtar Sehra does a much better job of explaining the similarities between ICOs and lemons.
+
+In addition, even in cases where ICO offerings are made in good faith, with real potential for quality, the instant liquidity provided by most token offerings can actually distract from building the underlying protocol or application. In fact, this is precisely why [companies that raise too much money too quickly](https://www.fastcompany.com/3057027/the-case-against-startups-raising-as-much-money-as-humanly-possible) are more likely to fail.
+
+## Fixing The Market
+
+We hope that the above makes it clear that the ICO market needs two things:
+
+a) Sufficient data for investors or contributors to make sound decisions about where to put their money. Although it's certainly possible to do due diligence on ICOs, in many cases the amount of information available is limited by how early stage the project is.
+
+b) A way outside of founder promises to ensure that vesting schedules are adhered to and are predicated on tangible milestones.
+
+These are problems we think GitToken can help solve by tying code - which we believe makes up the majority of the work in building new protocols and applications - to token issuance. Let's address them in order.
+
+## Bringing New Data to ICO Due Diligence
+
+The ecosystem around ICOs has evolved significantly over the past two years, with an ever increasing list of ICO news and research outlets emerging. But at its core the current process for evaluating ICOs typically involves looking at the same three metrics any early-stage investor looks at: team, product, and market.
 
 ### Team
 
@@ -23,26 +51,24 @@ The importance of teams isn’t to say that founders need to be a group of MIT g
 
 If we agree with Elon’s description above we agree that every company starts with a team and an idea or goal, but they don’t always (or often) start with a product. Of course, as any bad motivational poster will tell you, building a product is 1% inspiration and 99% perspiration. And as anyone who’s managed a project before knows, there’s a long road between starting a project and actually building out its core features. As might be expected that road starts with planning out what those core features are, breaking them down into manageable milestones, prioritizing, and planning resources accordingly.
 
-Naturally then, the first step in evaluating a product is to ask the question: does the team have a product? If they do, great, you can evaluate the product on its merits. If they don’t, the question really comes back to whether or not the team has a clearly defined vision and the ability to execute on that vision. In the ICO world determining this is still done in a relatively information fashion, through reading whitepapers and talking with founders.
+Naturally then, the first step in evaluating a product is to ask the question: does the team have a product? If they do, great, you can evaluate the product on its merits. If they don’t, the question really comes back to whether or not the team has a clearly defined vision and the ability to execute on that vision. In the ICO world determining this is still done in a relatively information fashion, through reading whitepapers, talking with founders, and looking at the project's existing GitHub repository.
 
 ### Market
 
 >In a great market — a market with lots of real potential customers — the market pulls product out of the startup.
 ~Marc Andreesen
 
-While every company has to have a team, and is at working on building or selling something that at least vaguely resembles a product or service, not every company has to have a market. In fact, plenty of companies throughout history haven’t had any market at all Those companies don’t exist anymore.
+While every company has to have a team, and is at working on building or selling something that at least vaguely resembles a product or service, not every company has to have a market. In fact, plenty of companies throughout history haven’t had any market at all. Those companies don’t exist anymore.
 
-The fundamental importance of market in the discussion of product-market fit has led some like Andy Rachleff, formerly of Benchmark Capital, to the conclusion that market is actually the most important thing to look for in a startup. ‘Rachleff’s Law’ (like many VCs Andy was known for his humility) as he calls it is as follows:
+The fundamental importance of market in the discussion of product-market fit has led some like Andy Rachleff, formerly of Benchmark Capital, to the conclusion that market is actually the most important thing to look for in a startup. ‘Rachleff’s Law’ as he calls it (like many VCs Andy was known for his humility) is as follows:
 
 - When a great team meets a lousy market, market wins.
 - When a lousy team meets a great market, market wins.
 - When a great team meets a great market, something special happens.
 
-In Marc Andreesen's terms above, markets can drive even a mediocre team to make great products - products that meet the customer's needs. Incidentally, this is why investors like to talk about funnels. How big is the market? How will you acquire users? What will keep those users coming back? Did my assistant make that reservation for Dorsia like I asked him to?
-
 ### Crypto-Specific Considerations
 
-While there is a lot of similarity between contributing to early stage projects and contributing to token-based projects, there are still some key differences. The most glaring of these differences is the introduction of tokens. The presence of tokens introduces a few different questions.
+There are also a few other metrics that have to be considered in light of the fact that blockchain investments are often investments in tokens that power protocols and applications. Some of these questions are as follows:
 
 **1) What does the token do?**
 
@@ -56,18 +82,8 @@ Examples of bad token economics.
 
 **3)
 
-## What’s Missing
-
-Although anyone could read through the above, or read through one of the many other posts outlining some of the basic things to look at in evaluating an early-stage project we don't believe it's smart or necessarily fair to assume everyone will conduct their own due diligence.
-
-While it might sound satisfying to some to say that, even if scams are occurring, the market is working as intended we view this as fundamentally misguided. Not only is the current system incredibly inefficient from a capital allocation perspective, it poses an existential reputational risk to any blockchain that allows for interoperable token ecosystems.
-
-In the traditional venture capital world the lack of liquidity around shares makes it difficult for founders to make a quick exit even if they’re as sexy as and getting as much serious traction as Pied Piper. But in the blockchain world where tokens are instantly liquid the idea of an instant payday can actually distract from building the underlying protocol or application. In fact, it's well known that [companies that raise too much money too quickly fail](https://www.fastcompany.com/3057027/the-case-against-startups-raising-as-much-money-as-humanly-possible) more often. The promise of an instant payday also creates other perverse incentives, some of which William Mougayar outlined in [a post on ICOs earlier this summer](https://medium.com/@wmougayar/10-things-i-dont-like-about-icos-5c84c19875eb).
-
-Fundamentally, we need a way outside of founder promises to ensure that vesting schedules occur on the basis of tangible milestones attached to real work. And we believe that the real work involved in building protocols and applications is in writing code. This is a problem we think GitToken can help solve.
+These are all good questions to ask, but what if we could compare traditional early-stage metrics and examine token economics all at once?
 
 ## Proof of code: Using GitToken to Tie Cash to Contributions
 
-GitToken allows any project to show its commitment to code by tying its fundraising to specific GitHub events and milestones. Contributors on the other hand can be assured that their donations are being put directly towards tangible roadmap items without any middleman allocating the funds.
-
-### GitToken for Open Source Projects
+GitToken allows any project to show its commitment to code by tying its fundraising to specific GitHub events and milestones. Projects using GitToken can assure contributors that their donations are being put directly towards tangible roadmap items without any middleman allocating the funds. Moreover, GitToken allows project owners to better manage their projects and incentivize their teams to put in the effort required to make the project a success.
