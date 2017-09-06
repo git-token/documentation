@@ -68,29 +68,42 @@ There are also a few other metrics that have to be considered in light of the fa
 
 This might be hard for some to hear but not everything needs to be a token. However, with the current hype around ICOs everything is becoming one. Understanding what a token does and why those functions can’t be managed by an existing token (most often ETH given that most ICOs are ERC20 tokens) is critical.
 
+As [Nick Tomaino of Rune Capital points out](https://thecontrol.co/on-token-value-e61b10b6175e), there are really four major kinds of tokens: traditional asset tokens, usage tokens, work tokens, and hybrid tokens.
+
+![Four Types of Tokens](1-eX9vs2LfnG482mkJ-szjxg.png)
+
+Understanding which of these categories (though they're really just one of many ways to partition the ecosystem) can be useful in understanding what the expectations for the token are as Nick outlines in his article.
+
 **2) What are the token economics?**
+
+
 
 What are token economics?
 Examples of good token economics.
 Examples of bad token economics.
 
-**3)
-
-## Traditional Funding methods
 
 
 ## Fixing The Market
 
 So clearly there are some very simple core questions we can ask about blockchain projects to get a general idea of whether they make sense as an investment. But in a space with this much hype, and where so much is on the line if bad projects get funded, we believe more is required. In particular we believe that:
 
-a) More accessible, real-time data is needed to help investors or contributors to make sound decisions about where to put their money; and
+a) more accessible, real-time data is needed to help investors or contributors to make sound decisions about where to put their money; and more importantly
 
-b) A way outside of founder promises is required to ensure that vesting schedules are adhered to and are predicated on tangible milestones.
+b) a way outside of founder promises is required to ensure that funding is predicated on tangible milestones.
 
-These are problems we think GitToken can help solve by tying code - which we believe makes up the majority of the work in building new protocols and applications - to token issuance. Let's address them in order.
+That last point isn't anything new by the way. Almost all standard angel and venture capital funding is already contingent on specific results being achieved by the company being funded. Crazy, right?
 
-These are all good questions to ask, but what if we could compare traditional early-stage metrics and examine token economics all at once?
+These are problems we think GitToken can help solve by tying code - which we believe makes up the majority of the work in building new protocols and applications - to token issuance.
 
-## Proof of code: Using GitToken to Tie Cash to Contributions
+## Proof of Code: Using GitToken to Tie Cash to Contributions
+
+At its core GitToken is a very simple idea: People should be rewarded for what they do and not what they say.
 
 GitToken allows any project to show its commitment to code by tying its fundraising to specific GitHub events and milestones. Projects using GitToken can assure contributors that their donations are being put directly towards tangible roadmap items without any middleman allocating the funds. Moreover, GitToken allows project owners to better manage their projects and incentivize their teams to put in the effort required to make the project a success.
+
+Given the risks to the ecosystem we outlined above, we want to strongly encourage blockchain projects in particular to use GitToken to build trust in the community and to tie their commitments to their contributors directly to the blockchain.
+
+## GitToken for ICO Due Dilligence
+
+We didn't go on the rant above about the current due dilligence process for nothing. GitToken also intends to provide an accurate and up-to-date feed of how projects are interacting with their GitHub repositories and
