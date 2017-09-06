@@ -64,9 +64,9 @@ In short what Andy was trying to get at is that neither a good team or a 'good' 
 
 There are also a few other metrics that have to be considered in light of the fact that blockchain investments are often investments in tokens that power protocols and applications. Some of these questions are as follows:
 
-**1) What does the token do?**
+**1) What does the token do and what are the token economics?**
 
-This might be hard for some to hear but not everything needs to be a token. However, with the current hype around ICOs everything is becoming one. Understanding what a token does and why those functions can’t be managed by an existing token (most often ETH given that most ICOs are ERC20 tokens) is critical.
+This might be hard for some to hear but not everything needs to be a token. However, with the current hype around ICOs everything is becoming one. Understanding what a token does and why those functions can’t be managed by an existing token (or to go further, why the platform or service needs to be decentralized) is critical.
 
 As [Nick Tomaino of Rune Capital points out](https://thecontrol.co/on-token-value-e61b10b6175e), there are really four major kinds of tokens: traditional asset tokens, usage tokens, work tokens, and hybrid tokens.
 
@@ -74,15 +74,11 @@ As [Nick Tomaino of Rune Capital points out](https://thecontrol.co/on-token-valu
 
 Understanding which of these categories (though they're really just one of many ways to partition the ecosystem) can be useful in understanding what the expectations for the token are as Nick outlines in his article.
 
-**2) What are the token economics?**
 
 
+**2) What do the sale terms look like?**
 
-What are token economics?
-Examples of good token economics.
-Examples of bad token economics.
-
-
+Looking into the terms and conditions associated with a product you're buying or a project you're funding isn't a new idea, but the way this process works in the case of token sales has some unique features. Most importantly, because tokens make it so easy to build exchange mechanisms there are many ways to sell a token, and some of these ways are better than others. As Vitalik outlined in [his post on token sale models earlier this summer](http://vitalik.ca/general/2017/06/09/sales.html), a variety of models have been tried including hybrid capped sales, reverse dutch auctions, Vickrey auctions, and proportional refunds. Rather than reinvent the wheel we strongly recommend you take a look at Vitalk's post for some great insights into what some best practices for token sales might look like.
 
 ## Fixing The Market
 
@@ -104,6 +100,8 @@ GitToken allows any project to show its commitment to code by tying its fundrais
 
 Given the risks to the ecosystem we outlined above, we want to strongly encourage blockchain projects in particular to use GitToken to build trust in the community and to tie their commitments to their contributors directly to the blockchain.
 
-## GitToken for ICO Due Dilligence
+## GitToken for ICO Due Diligence
 
-We didn't go on the rant above about the current due dilligence process for nothing. GitToken also intends to provide an accurate and up-to-date feed of how projects are interacting with their GitHub repositories and
+Although ecosystem around due diligence for ICOs has improved significantly over the last 12 months, our discussions with the community lead us to believe that many contributors are still failing to look at the code a project has actually written. In some cases this may just be a matter of laziness, but we understand that reviewing code can be time consuming and difficult for those coming from a non-technical background (which many ICO investors are).
+
+ GitToken intends to make it easy for anyone to get an idea of how much work a team is doing by providing an accurate and up-to-date feed of how project members are interacting with their GitHub repositories. In the alpha version of our software there are still many ways these metrics can be manipulated, and so we recommend that users proceed with caution. However, we hope that as GitToken matures it will become the standard for reviewing the work ethic and technical competence of a blockchain team.
