@@ -66,7 +66,7 @@ There are also a few other metrics that have to be considered in light of the fa
 
 **1) What does the token do and what are the token economics?**
 
-This might be hard for some to hear but not everything needs to be a token. However, with the current hype around ICOs everything is becoming one. Understanding what a token does and why those functions can’t be managed by an existing token (or to go further, why the platform or service needs to be decentralized) is critical.
+This might be hard for some to hear but not everything needs to be a token. However, with the current hype around ICOs everything is becoming one. Understanding what a token does and why those functions can’t be managed by an existing token (or to go further, why the platform or service benefits from decentralization) is critical.
 
 As [Nick Tomaino of Rune Capital points out](https://thecontrol.co/on-token-value-e61b10b6175e), there are really four major kinds of tokens: traditional asset tokens, usage tokens, work tokens, and hybrid tokens.
 
@@ -74,15 +74,13 @@ As [Nick Tomaino of Rune Capital points out](https://thecontrol.co/on-token-valu
 
 Understanding which of these categories (though they're really just one of many ways to partition the ecosystem) can be useful in understanding what the expectations for the token are as Nick outlines in his article.
 
-
-
 **2) What do the sale terms look like?**
 
 Looking into the terms and conditions associated with a product you're buying or a project you're funding isn't a new idea, but the way this process works in the case of token sales has some unique features. Most importantly, because tokens make it so easy to build exchange mechanisms there are many ways to sell a token, and some of these ways are better than others. As Vitalik outlined in [his post on token sale models earlier this summer](http://vitalik.ca/general/2017/06/09/sales.html), a variety of models have been tried including hybrid capped sales, reverse dutch auctions, Vickrey auctions, and proportional refunds. Rather than reinvent the wheel we strongly recommend you take a look at Vitalk's post for some great insights into what some best practices for token sales might look like.
 
 ## Fixing The Market
 
-So clearly there are some very simple core questions we can ask about blockchain projects to get a general idea of whether they make sense as an investment. But in a space with this much hype, and where so much is on the line if bad projects get funded, we believe more is required. In particular we believe that:
+So clearly there are some very simple core questions we can ask about blockchain projects to get a general idea of whether they make sense to contribute to. And while we'd like to believe that most people already ask these questions and that these questions are sufficient, in a space with this much hype, and where so much is on the line if bad projects get funded more is required. In particular we believe that:
 
 a) more accessible, real-time data is needed to help investors or contributors to make sound decisions about where to put their money; and more importantly
 
@@ -105,3 +103,5 @@ Given the risks to the ecosystem we outlined above, we want to strongly encourag
 Although ecosystem around due diligence for ICOs has improved significantly over the last 12 months, our discussions with the community lead us to believe that many contributors are still failing to look at the code a project has actually written. In some cases this may just be a matter of laziness, but we understand that reviewing code can be time consuming and difficult for those coming from a non-technical background (which many ICO investors are).
 
  GitToken intends to make it easy for anyone to get an idea of how much work a team is doing by providing an accurate and up-to-date feed of how project members are interacting with their GitHub repositories. In the alpha version of our software there are still many ways these metrics can be manipulated, and so we recommend that users proceed with caution. However, we hope that as GitToken matures it will become the standard for reviewing the work ethic and technical competence of a blockchain team.
+
+If you'd like to get involved, feel free to open an issue, submit a pull request, or chat with us on Gitter.
