@@ -1,12 +1,14 @@
+# Improving the ICO Market Using GitToken
+
 Initial [coin](https://www.coindesk.com/bitcoin-explained-global-currency-wall-street-veteran/), [commodity](http://www.cftc.gov/PressRoom/PressReleases/pr7231-15), [security](https://www.sec.gov/news/press-release/2017-131), or [token](https://news.21.co/thoughts-on-tokens-436109aabcbe?gi=6bae346bbfdd) offerings, really whatever you want to call them, have become a massive global phenomenon. According to many in the blockchain community we are at peak ICO, with plenty of projects raising over 7 figures for little more than a whitepaper and over $1.8 billion in total funds raised. However, amidst the chaos, there are some teams are keeping focused and designing protocols that will fundamentally transform how value is generated, tracked, and transferred in the 21st century.
 
-So how can we make sure that the teams being funded amidst the ICO hype are those building the future and not those building their bank accounts?
+So how can we make sure that the teams being funded amidst the ICO hype are those building the future and not their bank accounts?
 
 First, although there are some obvious reasons, let's answer the question of why we should care.
 
 ## A Market For Lemons
 
-While it might sound satisfying to some to say that, even if it's funding low-quality projects more often than not, the market is working as intended we view this as fundamentally misguided. Not only is the current system incredibly inefficient from a capital allocation perspective, it poses an existential risk to any blockchain that allows for token ecosystems. As outlined in George Akerlof's famous paper "The Market for Lemons: Quality Uncertainty and the Market Mechanism" the presence of inferior goods along with a few other conditions will eventually drive a market out of existence. The four core criteria for a lemon market are as follows:
+While it might sound satisfying to some to say that, even if it's funding low-quality projects more often than not, the market is working as intended we view this as fundamentally misguided. Not only is the current system incredibly inefficient from a capital allocation perspective, it poses an existential risk to the blockchain ecosystem. As outlined in George Akerlof's famous paper "The Market for Lemons: Quality Uncertainty and the Market Mechanism" the presence of inferior goods along with a few other conditions will eventually drive a market out of existence. The four core criteria for a lemon market are as follows:
 
 1) An asymmetry of information;
 
@@ -16,7 +18,7 @@ While it might sound satisfying to some to say that, even if it's funding low-qu
 
 4) No recourse for purchases of low-quality products.
 
-While we believe it is easy to see that ICO markets satisfy these criteria, [this article](https://medium.com/@avtarsehra/icos-and-economics-of-lemon-markets-96638e86b3b2) by Avtar Sehra does a much better job of explaining the similarities between ICOs and lemons.
+While we think it's easy to see that current ICO markets satisfy these criteria, [this article](https://medium.com/@avtarsehra/icos-and-economics-of-lemon-markets-96638e86b3b2) by Avtar Sehra does a much better job of explaining the similarities between ICOs and lemons.
 
 In addition, even in cases where ICO offerings are made in good faith, with real potential for quality, the instant liquidity provided by most token offerings can actually distract from building the underlying protocol or application. In fact, this is precisely why [companies that raise too much money too quickly](https://www.fastcompany.com/3057027/the-case-against-startups-raising-as-much-money-as-humanly-possible) are more likely to fail.
 
