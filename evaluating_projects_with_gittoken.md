@@ -82,21 +82,17 @@ While the above might provide a good starting point for evaluating blockchain pr
 
 a) Shining a light on projects using real-time data to help contributors to make sound decisions about where to put their money; and
 
-b) Enforce best practices and founder integrity by ensuring that funding is predicated on tangible milestones.
+b) Enforcing best practices and founder integrity by ensuring that funding is predicated on tangible milestones.
 
 These are problems we think GitToken can help solve by tying code - which we believe makes up the majority of the work in building new protocols and applications - to token issuance.
 
-## Proof of Code: Using GitToken to Tie Cash to Contributions
+## Proof of Code: Using GitToken to Tie Rewards to Contributions
 
 At its core GitToken is a very simple idea: People should be rewarded for what they do and not what they say.
 
 GitToken allows any project to show its commitment to code by tying its fundraising to specific GitHub events and milestones. Projects using GitToken can assure contributors that their donations are being put directly towards tangible roadmap items without any middleman allocating the funds. Moreover, GitToken allows project owners to better manage their projects and incentivize their teams to put in the effort required to make the project a success.
 
 Given the risks to the ecosystem we outlined above, we want to strongly encourage blockchain projects in particular to use GitToken to build trust in the community and to tie their commitments to their contributors directly to the blockchain.
-
-## Using GitToken for ICO Due Diligence
-
-Although ecosystem around due diligence for ICOs has improved significantly over the last 12 months, our discussions with the community lead us to believe that many contributors are still failing to look at the code a project has actually written. In some cases this may just be a matter of laziness, but we understand that reviewing code can be time consuming and difficult for those coming from a non-technical background (which many ICO investors are).
 
 GitToken intends to make it easy for anyone to get an idea of how much work a team is doing by providing an accurate and up-to-date feed of how project members are interacting with their GitHub repositories. In the alpha version of our software there are still many ways these metrics can be manipulated, and so we recommend that users proceed with caution. However, we hope that as GitToken matures it will become the standard for reviewing the work ethic and technical competence of a blockchain team.
 
