@@ -33,27 +33,6 @@ The Ethereum ecosystem has adopted a de facto contract interface for transacting
 
 GitToken will offer GTK tokens to represent contributions made to the organization's GitHub repositories. A portion of tokens issued are automatically auctioned to bidders by the GitToken contract upon each event.
 
-## 2. GitToken
-Brickblock will be represented by a smart contract that runs on the
-blockchain, which handles broker registration and manages individual PoA
-contracts.
-
-###
-
-## 3. GitToken Registry & Exchange
-
-### 3.1 Discovering New Projects
-
-### 3.2 Freely Exchange Work and Ideas
-The GitToken registry and exchange services provide the infrastructure for others to discover, contribute to, and exchange with your GitToken projects.
-
-Key Features
-
-Enable Others to Discover Your Project
-Zero Exchange Fees For GitToken Projects
-Exchange User Interface
-Project Showcase on http://GitToken.org
-
 ```- Setting Up a GitHub Web Hook for GitToken (RT/SM)
 - Using Docker image to get started with GitToken (RT/SM)
 - Architecture Overview, flow charts (RT/SM)
