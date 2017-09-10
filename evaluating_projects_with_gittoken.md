@@ -1,6 +1,6 @@
 # Improving the ICO Market Using GitToken
 
-Initial [coin](https://www.coindesk.com/bitcoin-explained-global-currency-wall-street-veteran/), [commodity](http://www.cftc.gov/PressRoom/PressReleases/pr7231-15), [security](https://www.sec.gov/news/press-release/2017-131), or [token](https://news.21.co/thoughts-on-tokens-436109aabcbe?gi=6bae346bbfdd) offerings, really whatever you want to call them, have become a massive global phenomenon. According to many in the blockchain community we are at peak ICO, with plenty of projects raising over 7 figures for little more than a whitepaper and over $1.8 billion in total funds raised. However, amidst the chaos, there are some teams are keeping focused and designing protocols that will fundamentally transform how value is generated, tracked, and transferred in the 21st century.
+Initial [coin](https://www.coindesk.com/bitcoin-explained-global-currency-wall-street-veteran/), [commodity](http://www.cftc.gov/PressRoom/PressReleases/pr7231-15), [security](https://www.sec.gov/news/press-release/2017-131), or [token](https://news.21.co/thoughts-on-tokens-436109aabcbe?gi=6bae346bbfdd) offerings, really whatever you want to call them, have become a massive global phenomenon. According to many in the blockchain community we are at peak ICO, with plenty of projects raising over 7 figures for little more than a whitepaper and over $1.8 billion in total funds raised. However, amidst the chaos, there are some teams who are keeping focused and designing protocols that will fundamentally transform how value is generated, recorded, and transferred in the 21st century.
 
 So how can we make sure that the teams being funded amidst the ICO hype are those building the future and not their bank accounts?
 
@@ -8,7 +8,9 @@ First, although there are some obvious reasons, let's answer the question of why
 
 ## A Market For Lemons
 
-While it might sound satisfying to some to say that, even if it's funding low-quality projects more often than not, the market is working as intended we view this as fundamentally misguided. Not only is the current system incredibly inefficient from a capital allocation perspective, it poses an existential risk to the blockchain ecosystem. As outlined in George Akerlof's famous paper "The Market for Lemons: Quality Uncertainty and the Market Mechanism" the presence of inferior goods along with a few other conditions will eventually drive a market out of existence. The four core criteria for a lemon market are as follows:
+While it might sound satisfying to some to say that, even if it's funding low-quality projects more often than not, the market is working as intended we view this as fundamentally misguided. Not only is the current system incredibly inefficient from a capital allocation perspective, it poses an existential risk to the blockchain ecosystem.
+
+As outlined in George Akerlof's famous paper "The Market for Lemons: Quality Uncertainty and the Market Mechanism" the presence of inferior goods along with a few other conditions will eventually drive a market out of existence. The four core criteria for a lemon market are as follows:
 
 1) An asymmetry of information;
 
@@ -20,7 +22,9 @@ While it might sound satisfying to some to say that, even if it's funding low-qu
 
 While we think it's easy to see that current ICO markets satisfy these criteria, [this article](https://medium.com/@avtarsehra/icos-and-economics-of-lemon-markets-96638e86b3b2) by Avtar Sehra does a much better job of explaining the similarities between ICOs and lemons.
 
-In addition, even in cases where ICO offerings are made in good faith, with real potential for quality, the instant liquidity provided by most token offerings can actually distract from building the underlying protocol or application. In fact, this is precisely why [companies that raise too much money too quickly](https://www.fastcompany.com/3057027/the-case-against-startups-raising-as-much-money-as-humanly-possible) are more likely to fail.
+In addition, even in cases where ICO offerings are made in good faith, with real potential for quality, the instant liquidity provided by most token offerings can actually distract from building the underlying protocol or application.
+
+In fact, this is precisely why [companies that raise too much money too quickly](https://www.fastcompany.com/3057027/the-case-against-startups-raising-as-much-money-as-humanly-possible) are more likely to fail.
 
 If we really want to ensure that valuable projects in the ecosystem continue to get funding then, we need better mechanisms to ensure funds go to the right teams.
 
@@ -35,7 +39,9 @@ The ecosystem around ICOs has evolved significantly over the past two years, wit
 
 Team is the only metric that can be directly assessed at any stage of a company’s life. It’s hard to know much about a product that hasn’t been built or a market that hasn’t been explored, but before there’s anything there’s a team. In some cases VCs will almost entirely ignore product and market on the assumption that a good team with neither will solve the problem while a bad team with both will squander the opportunity.
 
-The importance of teams isn’t to say that founders need to be a group of MIT graduates with 10 years or more of experience in the domain they’re exploring because [even they can forget to change their passwords](https://www.wired.com/story/enigma-ico-ethereum-heist/). However, a good team should always display passion, integrity, and adaptability. Most of these are tired and often nebulous concepts, but they define what you’ll hear from almost any established early-stage VC and (consequently) what you’ll read in almost any ICO report today.
+The importance of teams isn’t to say that founders need to be a group of MIT graduates with 10 years or more of experience in the domain they’re exploring because [even they can forget to change their passwords](https://www.wired.com/story/enigma-ico-ethereum-heist/). 
+
+However, a good team should always display passion, integrity, adaptability, and grit. Most of these are tired and often nebulous concepts, but they define what you’ll hear from almost any established early-stage VC and (consequently) what you’ll read in almost any ICO report today.
 
 ### Product
 
@@ -45,7 +51,7 @@ The importance of teams isn’t to say that founders need to be a group of MIT g
 
 If we agree with Elon’s description above we agree that every company starts with a team and an idea or goal, but they don’t always (or often) start with a product. Of course, as any bad motivational poster will tell you, building a product is 1% inspiration and 99% perspiration. And as anyone who’s managed a project before knows, there’s a long road between starting a project and actually building out its core features. As might be expected that road starts with planning out what those core features are, breaking them down into manageable milestones, prioritizing, and planning resources accordingly.
 
-Naturally then, the first step in evaluating a product is to ask the question: does the team have a product? If they do, great, you can evaluate the product on its merits. If they don’t (like many projects in the blockchain ecosystem), the question really comes back to whether or not the team has a clearly defined vision and the ability to execute on that vision. In the ICO world determining this is still done in a relatively information fashion, through reading whitepapers, and talking with founders.
+Naturally then, the first step in evaluating a product is to ask the question: does the team have a product? If they do, great, you can evaluate the product on its merits. If they don’t (like many projects in the blockchain ecosystem), the question really comes back to whether or not the team has a clearly defined vision and the ability to execute on that vision. In the ICO world determining this is still done in a relatively informal fashion, through reading whitepapers, and talking with founders.
 
 ### Market
 
