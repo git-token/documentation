@@ -58,7 +58,7 @@ The fundamental importance of market in the discussion of product-market fit has
 - When a lousy team meets a great market, market wins.
 - When a great team meets a great market, something special happens.
 
-In short what Andy was trying to get at is that neither a good team or a 'good' product will fix having no market for what you're offering. Listening to customers and letting the market's needs drive your product is critical, and organizations that have opted not to get feedback from the market are setting themselves up for failure.
+In short what Andy was trying to get at is that neither a good team or a 'good' product will fix having no market for what you're offering. Companies that listen to customers and let the market's needs drive their product are far more likely to succeed.
 
 ### Crypto-Specific Considerations
 
@@ -66,13 +66,13 @@ There are also a few other metrics that have to be considered in light of the fa
 
 **1) What does the token do and what are the token economics?**
 
-This might be hard for some to hear but not everything needs to be a token. However, with the current hype around ICOs everything is becoming one. Understanding what a token does and why those functions can’t be managed by an existing token (or to go further, why the platform or service benefits from decentralization) is critical.
+This might be hard for some to hear but [not everything needs to be a token](https://medium.com/@bryn.bellomy/not-every-app-needs-a-coin-69305aecb43f). However, with the current hype around ICOs everything is becoming one. Understanding what a token does and why those functions can’t be managed by an existing token (or to go further, why the platform or service benefits from decentralization) is critical. Note that this isn't to say that tokens are inherently bad - tokens that provide the right incentives and utility can create more robust and stable ecosystems.
 
 As [Nick Tomaino of Rune Capital points out](https://thecontrol.co/on-token-value-e61b10b6175e), there are really four major kinds of tokens: traditional asset tokens, usage tokens, work tokens, and hybrid tokens.
 
 ![Four Types of Tokens](1-eX9vs2LfnG482mkJ-szjxg.png)
 
-Understanding which of these categories (though they're really just one of many ways to partition the ecosystem) can be useful in understanding what the expectations for the token are as Nick outlines in his article.
+Understanding which of these categories (though they're really just one of many ways to partition the ecosystem) can be a useful starting point in defining what a given token is actually meant to do, but fundamentally the end goal is to understand exactly how the token functions in the ecosystem.
 
 **2) What do the sale terms look like?**
 
@@ -98,10 +98,10 @@ GitToken allows any project to show its commitment to code by tying its fundrais
 
 Given the risks to the ecosystem we outlined above, we want to strongly encourage blockchain projects in particular to use GitToken to build trust in the community and to tie their commitments to their contributors directly to the blockchain.
 
-## GitToken for ICO Due Diligence
+## Using GitToken for ICO Due Diligence
 
 Although ecosystem around due diligence for ICOs has improved significantly over the last 12 months, our discussions with the community lead us to believe that many contributors are still failing to look at the code a project has actually written. In some cases this may just be a matter of laziness, but we understand that reviewing code can be time consuming and difficult for those coming from a non-technical background (which many ICO investors are).
 
- GitToken intends to make it easy for anyone to get an idea of how much work a team is doing by providing an accurate and up-to-date feed of how project members are interacting with their GitHub repositories. In the alpha version of our software there are still many ways these metrics can be manipulated, and so we recommend that users proceed with caution. However, we hope that as GitToken matures it will become the standard for reviewing the work ethic and technical competence of a blockchain team.
+GitToken intends to make it easy for anyone to get an idea of how much work a team is doing by providing an accurate and up-to-date feed of how project members are interacting with their GitHub repositories. In the alpha version of our software there are still many ways these metrics can be manipulated, and so we recommend that users proceed with caution. However, we hope that as GitToken matures it will become the standard for reviewing the work ethic and technical competence of a blockchain team.
 
 If you'd like to get involved, feel free to open an issue, submit a pull request, or chat with us on Gitter.
