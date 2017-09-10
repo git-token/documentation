@@ -5,17 +5,13 @@ This document describes a smart contract platform built on top of [Ethereum](htt
 The suggested Proof-of-Code scheme will enable open source projects to reward contributors, fund their projects, and seamlessly trade  [ERC20](https://theethereum.wiki/w/index.php/ERC20_Token_Standard) tokens representing the market's appraisal of the value of a given open source project.
 
 ### Table of Contents
-* [1. Background and Motivation](#1-background)
-* [2. GitToken Webhook](#2-gittoken)
-  + [2.1. Brickblock Token (BBT)](#21-brickblock-token-bbt)
-* [3. GitToken Registry & Exchange](#3-proof-of-asset)
-  + [3.1. Creation](#31-creation)
-* [4. Real-World-Asset Funds](#4-real-world-asset-funds)
-  + [4.1. Funding](#41-funding)
-* [5. Crypto Funds](#5-crypto-funds)
-  + [5.1. Passive (CTF)](#51-passive-ctf)
-* [6. Compatibility](#6-compatibility)
-* [Glossary](#glossary)
+* [1. Background and Overview](#1-background)
+* [2. GitToken Architecture Overview](#2-gittoken-architecture)
+  + [2.1. GitToken Webhook](#21-webhook)
+  + [2.2. GitToken Dashboard](#21-dashboard)
+  + [2.3. GGitToken Registry & Exchange)](#21-registry)
+* [3. Getting Started with GitToken](#2-gittoken-user-guide)
+* [4. Token Economics](#2-gittoken-user-guide)
 
 
 ## 1. Background and Motivation
@@ -33,7 +29,7 @@ Contributors receive tokens through interacting with an organization that has co
 
 Contributors verify their GitHub identity by authenticating into GitHub using their Open Authorization (OAuth) token credentials. Contributors authenticate themselves with the GitToken token contract using the GitToken server authentication URL associated with an organization. If a contributor has not yet verified their identity with the contract, their contribution rewards will be held by the contract until their identity has been verified.
 
-The Ethereum ecosystem has adopted a de facto contract interface for transacting value on top of the Ethereum network, the ERC20 protocol. The ERC20 protocol allows tokens to be exchanged over-the-counter (OTC) with private parties using Ethereum contracts. While the standard is still evolving, many developers have used the ERC20 token to represent utility or rights in their projects and have offered tokens to the public to raise funding for open source development. 
+The Ethereum ecosystem has adopted a de facto contract interface for transacting value on top of the Ethereum network, the ERC20 protocol. The ERC20 protocol allows tokens to be exchanged over-the-counter (OTC) with private parties using Ethereum contracts. While the standard is still evolving, many developers have used the ERC20 token to represent utility or rights in their projects and have offered tokens to the public to raise funding for open source development.
 
 GitToken will offer GTK tokens to represent contributions made to the organization's GitHub repositories. A portion of tokens issued are automatically auctioned to bidders by the GitToken contract upon each event.
 
