@@ -34,9 +34,6 @@ The ecosystem around ICOs has evolved significantly over the past two years, wit
 
 ### Team
 
->I don’t know what a business is. All a company is is a bunch of people together to create a product or service. There’s no such thing as a business, just pursuit of a goal—a group of people pursuing a goal.
-~Elon Musk
-
 Team is the only metric that can be directly assessed at any stage of a company’s life. It’s hard to know much about a product that hasn’t been built or a market that hasn’t been explored, but before there’s anything there’s a team. In some cases VCs will almost entirely ignore product and market on the assumption that a good team with neither will solve the problem while a bad team with both will squander the opportunity.
 
 The importance of teams isn’t to say that founders need to be a group of MIT graduates with 10 years or more of experience in the domain they’re exploring because [even they can forget to change their passwords](https://www.wired.com/story/enigma-ico-ethereum-heist/). 
@@ -45,18 +42,11 @@ However, a good team should always display passion, integrity, adaptability, and
 
 ### Product
 
->I don't have a quote for here, and whether I should have included quotes in the other two sections is frankly in question.
->~Me
-
-
-If we agree with Elon’s description above we agree that every company starts with a team and an idea or goal, but they don’t always (or often) start with a product. Of course, as any bad motivational poster will tell you, building a product is 1% inspiration and 99% perspiration. And as anyone who’s managed a project before knows, there’s a long road between starting a project and actually building out its core features. As might be expected that road starts with planning out what those core features are, breaking them down into manageable milestones, prioritizing, and planning resources accordingly.
+Every company starts with a team and an idea or goal, but they don’t always (or often) start with a product. Of course, as any bad motivational poster will tell you, building a product is 1% inspiration and 99% perspiration. And as anyone who’s managed a project before knows, there’s a long road between starting a project and actually building out its core features. As might be expected that road starts with planning out what those core features are, breaking them down into manageable milestones, prioritizing, and planning resources accordingly.
 
 Naturally then, the first step in evaluating a product is to ask the question: does the team have a product? If they do, great, you can evaluate the product on its merits. If they don’t (like many projects in the blockchain ecosystem), the question really comes back to whether or not the team has a clearly defined vision and the ability to execute on that vision. In the ICO world determining this is still done in a relatively informal fashion, through reading whitepapers, and talking with founders.
 
 ### Market
-
->In a great market — a market with lots of real potential customers — the market pulls product out of the startup.
-~Marc Andreesen
 
 While every company has to have a team, and is at working on building or selling something that at least vaguely resembles a product or service, not every company has to have a market. In fact, plenty of companies throughout history haven’t had any market at all. Those companies don’t exist anymore.
 
