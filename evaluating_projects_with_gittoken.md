@@ -64,7 +64,7 @@ There are also a few other metrics that have to be considered in light of the fa
 
 **1) What does the token do and what are the token economics?**
 
-This might be hard for some to hear but [not everything needs to be a token](https://medium.com/@bryn.bellomy/not-every-app-needs-a-coin-69305aecb43f). However, with the current hype around ICOs everything is becoming one. Understanding what a token does and why those functions can’t be managed by an existing token (or to go further, why the platform or service benefits from decentralization) is critical. Note that this isn't to say that tokens are inherently bad - tokens that provide the right incentives and utility can create more robust and stable ecosystems.
+[Not everything needs to be a token](https://medium.com/@bryn.bellomy/not-every-app-needs-a-coin-69305aecb43f), but at the moment everything is becoming one. Understanding what a token does and why those functions can’t be managed by an existing token (or to go further, why the platform or service benefits from decentralization) is critical. Note that this isn't to say that tokens are inherently bad - tokens that provide the right incentives and utility can create more robust and stable ecosystems.
 
 As [Nick Tomaino of Rune Capital points out](https://thecontrol.co/on-token-value-e61b10b6175e), there are really four major kinds of tokens: traditional asset tokens, usage tokens, work tokens, and hybrid tokens.
 
@@ -76,15 +76,13 @@ Understanding which of these categories (though they're really just one of many 
 
 Looking into the terms and conditions associated with a product you're buying or a project you're funding isn't a new idea, but the way this process works in the case of token sales has some unique features. Most importantly, because tokens make it so easy to build exchange mechanisms there are many ways to sell a token, and some of these ways are better than others. As Vitalik outlined in [his post on token sale models earlier this summer](http://vitalik.ca/general/2017/06/09/sales.html), a variety of models have been tried including hybrid capped sales, reverse dutch auctions, Vickrey auctions, and proportional refunds. Rather than reinvent the wheel we strongly recommend you take a look at Vitalk's post for some great insights into what some best practices for token sales might look like.
 
-## Fixing The Market
+## Stewarding a Flight to Quality
 
-So clearly there are some very simple core questions we can ask about blockchain projects to get a general idea of whether they make sense to contribute to. And while we'd like to believe that most people already ask these questions and that these questions are sufficient, in a space with this much hype, and where so much is on the line if bad projects get funded more is required. In particular we believe that:
+While the above might provide a good starting point for evaluating blockchain projects, the market is still relatively nascent and, like many nascent markets, opaque. This opacity has resulted in **a)** money flowing into a wide range of projects as speculators hope that more darts will give them a better chance of hitting the bullseye and **b** [a significant number of potential contributors staying on the sidelines solely due to "a lack of information or third party research"](https://media.coindesk.com/uploads/2017/09/state_of_blockchain_q2_2017.pdf). We believe this situation can be improved by:
 
-a) more accessible, real-time data is needed to help investors or contributors to make sound decisions about where to put their money; and more importantly
+a) Shining a light on projects using real-time data to help contributors to make sound decisions about where to put their money; and
 
-b) a way outside of founder promises is required to ensure that funding is predicated on tangible milestones.
-
-That last point isn't anything new by the way. Almost all standard angel and venture capital funding is already contingent on specific results being achieved by the company being funded. Crazy, right?
+b) Enforce best practices and founder integrity by ensuring that funding is predicated on tangible milestones.
 
 These are problems we think GitToken can help solve by tying code - which we believe makes up the majority of the work in building new protocols and applications - to token issuance.
 
