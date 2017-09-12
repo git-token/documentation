@@ -7,7 +7,7 @@ This document describes a smart contract platform built on top of [Ethereum](htt
 The suggested Proof-of-Code scheme will enable open source projects to reward contributors, fund their projects, and seamlessly trade  [ERC20](https://theethereum.wiki/w/index.php/ERC20_Token_Standard) tokens representing the market's appraisal of the value of a given open source project.
 
 ### Table of Contents
-* [1. Background and Overview](#1-background)
+* [1. Background and Motivation](#1-background)
 * [2. Features & Getting Started](#2-features)
 * [3. GitToken Architecture Overview](#3-gittoken-architecture)
   + [3.1. GitToken Webhook](#31-webhook)
