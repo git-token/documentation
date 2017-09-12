@@ -1,10 +1,9 @@
-Note: This document is under active development. If you have any questions, comments, or suggestions feel free to reach out!
+**Note:** This document is under active development. If you have any questions, comments, or suggestions feel free to reach out!
 
 # GitToken Whitepaper v0.1
 
 ### Abstract
-This document describes a smart contract platform built on top of [Ethereum](https://ethereum.org/), a globally distributed computing network.
-The suggested Proof-of-Code scheme will enable open source projects to reward contributors, fund their projects, and seamlessly trade  [ERC20](https://theethereum.wiki/w/index.php/ERC20_Token_Standard) tokens representing the market's appraisal of the value of a given open source project.
+This document describes a decentralized open source funding platform built on top of Ethereum. The suggested Proof-of-Code scheme will enable open source projects to reward contributors, fund their projects, and seamlessly trade  ERC20 tokens representing the market's appraisal of the value of contributions made to a given open source project.
 
 ### Table of Contents
 * [1. Background and Motivation](#1-background-and-motivation)
