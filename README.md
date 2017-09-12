@@ -3,7 +3,7 @@
 # GitToken Whitepaper v0.1
 
 ### Abstract
-This document describes a decentralized open source funding platform built on top of Ethereum. The suggested Proof-of-Code scheme will enable open source projects to reward contributors, fund their projects, and seamlessly trade  ERC20 tokens representing the market's appraisal of the value of contributions made to a given open source project.
+GitToken is a decentralized open source funding platform built on top of Ethereum that allows any GitHub repository to issue and distribute tokens on the basis of real contributions. We hope that the ability for contributors to seamlessly fund projects they like and for open source developers to be rewarded for their work will help move the open source community and associated ethos forward.
 
 ### Table of Contents
 * [1. Background and Motivation](#1-background-and-motivation)
