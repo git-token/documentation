@@ -6,12 +6,20 @@ The suggested Proof-of-Code scheme will enable open source projects to reward co
 
 ### Table of Contents
 * [1. Background and Overview](#1-background)
-* [2. GitToken Architecture Overview](#2-gittoken-architecture)
-  + [2.1. GitToken Webhook](#21-webhook)
-  + [2.2. GitToken Dashboard](#21-dashboard)
-  + [2.3. GGitToken Registry & Exchange)](#21-registry)
-* [3. Getting Started with GitToken](#2-gittoken-user-guide)
-* [4. Token Economics](#2-gittoken-user-guide)
+* [2. Features & Getting Started](#2-features)
+* [3. GitToken Architecture Overview](#3-gittoken-architecture)
+  + [3.1. GitToken Webhook](#31-webhook)
+  + [3.2. GitToken CLI](#32-CLI)
+  + [3.2. GitToken Dashboard](#33-dashboard)
+  + [3.3. GitToken Registry & Exchange)](#34-registry)
+* [4. Token Economics](#4-gittoken-economics)
+* [5. Funding Projects with GitToken](#4-gittoken-funding)
+  + [5.1. For Projects)](#51-funding-project)
+  + [5.2. For Contributors)](#52-funding-contributor)
+* [6. Project Analysis & Comparison](#4-gittoken-project-analysis)
+  + [6.1. Finding Projects)](#61-finding-projects)
+  + [6.1. Analyzing Projects)](#62-analyzing-projects)
+* [7. GitToken Multiverse](#4-gittoken-muiltiverse)
 
 
 ## 1. Background and Motivation
