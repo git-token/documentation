@@ -42,21 +42,15 @@ However, a good team should always display passion, integrity, adaptability, and
 
 ### Product
 
-Every company starts with a team and an idea or goal, but they don’t always (or often) start with a product. Of course, as any bad motivational poster will tell you, building a product is 1% inspiration and 99% perspiration. And as anyone who’s managed a project before knows, there’s a long road between starting a project and actually building out its core features. As might be expected that road starts with planning out what those core features are, breaking them down into manageable milestones, prioritizing, and planning resources accordingly.
+Every company starts with a team and an idea or goal, but they don’t always (or often) start with a product. Anyone who’s managed a software project before knows, there’s a long road between starting a project and actually building out an MVP. As might be expected that road starts with planning out what those core features are, breaking them down into manageable milestones, prioritizing, and planning resources accordingly.
 
-Naturally then, the first step in evaluating a product is to ask the question: does the team have a product? If they do, great, you can evaluate the product on its merits. If they don’t (like many projects in the blockchain ecosystem), the question really comes back to whether or not the team has a clearly defined vision and the ability to execute on that vision. In the ICO world determining this is still done in a relatively informal fashion, through reading whitepapers, and talking with founders.
+As you might expect then, the first step in evaluating a company's product is to determine whether they have one. If they do, great, you can evaluate the product on its merits. If they don’t (like many projects in the blockchain ecosystem), the question really comes back to whether or not the team has a clearly defined vision and the ability to execute on that vision. In the ICO world determining this is still done in a relatively informal fashion, through reading whitepapers, and talking with founders.
 
 ### Market
 
 While every company has to have a team, and is at working on building or selling something that at least vaguely resembles a product or service, not every company has to have a market. In fact, plenty of companies throughout history haven’t had any market at all. Those companies don’t exist anymore.
 
-The fundamental importance of market in the discussion of product-market fit has led some like Andy Rachleff, formerly of Benchmark Capital, to the conclusion that market is actually the most important thing to look for in a startup. ‘Rachleff’s Law’ as he calls it (like many VCs Andy was known for his humility) is as follows:
-
-- When a great team meets a lousy market, market wins.
-- When a lousy team meets a great market, market wins.
-- When a great team meets a great market, something special happens.
-
-In short what Andy was trying to get at is that neither a good team or a 'good' product will fix having no market for what you're offering. Companies that listen to customers and let the market's needs drive their product are far more likely to succeed.
+The fundamental importance of market in the discussion of product-market fit has led some like Andy Rachleff, formerly of Benchmark Capital, to the conclusion that market is actually the most important thing to look for in a startup. ‘Rachleff’s Law’ (like many VCs Andy is known for his humility) as he calls it essentially states that neither a good team or a good product will fix having no market for what you're offering. The takeaway is that companies that listen to customers and let the market's needs drive their product are far more likely to succeed. So, look for companies that are actively engaging their market and getting feedback.
 
 ### Crypto-Specific Considerations
 
@@ -64,7 +58,7 @@ There are also a few other metrics that have to be considered in light of the fa
 
 **1) What does the token do and what are the token economics?**
 
-[Not everything needs to be a token](https://medium.com/@bryn.bellomy/not-every-app-needs-a-coin-69305aecb43f), but at the moment everything is becoming one. Understanding what a token does and why those functions can’t be managed by an existing token (or to go further, why the platform or service benefits from decentralization) is critical. Note that this isn't to say that tokens are inherently bad - tokens that provide the right incentives and utility can create more robust and stable ecosystems.
+[Not everything needs to be a token](https://medium.com/@bryn.bellomy/not-every-app-needs-a-coin-69305aecb43f), but at the moment everything seems to be becoming one. Understanding what a token does and why those functions can’t be managed by an existing token (or to go further, why the platform or service benefits from decentralization) is critical. Note that this isn't to say that tokens are inherently bad - tokens that provide the right incentives and utility can create more robust and stable ecosystems.
 
 As [Nick Tomaino of Rune Capital points out](https://thecontrol.co/on-token-value-e61b10b6175e), there are really four major kinds of tokens: traditional asset tokens, usage tokens, work tokens, and hybrid tokens.
 
