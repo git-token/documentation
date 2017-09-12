@@ -1,3 +1,5 @@
+Note: This document is under active development. If you have any questions, comments, or suggestions feel free to reach out!
+
 # GitToken Whitepaper v0.1
 
 ### Abstract
@@ -22,7 +24,7 @@ The suggested Proof-of-Code scheme will enable open source projects to reward co
 * [7. GitToken Multiverse](#4-gittoken-muiltiverse)
 
 
-## 1. Background and Motivation
+# 1. Background and Motivation
 Over the past 9 years GitHub has quickly become the largest host of source code in the world, managing nearly 57 million repositories and 100 million pull requests for over 26 million users. As the open source movement continues to gain momentum so to does the number of individual contributors to these repositories. In some cases these repositories had over 10,000 contributors.
 
 At the same time, the emergence of cryptographic networks and assets, such as Ethereum, has created new protocols for sending and managing value. Ethereum is a cryptographic network for running distributed programs; allowing users of Ethereum to send peer-to-peer (P2P) transactions and interact with smart contracts deployed on the global network.
@@ -40,17 +42,3 @@ Contributors verify their GitHub identity by authenticating into GitHub using th
 The Ethereum ecosystem has adopted a de facto contract interface for transacting value on top of the Ethereum network, the ERC20 protocol. The ERC20 protocol allows tokens to be exchanged over-the-counter (OTC) with private parties using Ethereum contracts. While the standard is still evolving, many developers have used the ERC20 token to represent utility or rights in their projects and have offered tokens to the public to raise funding for open source development.
 
 GitToken will offer GTK tokens to represent contributions made to the organization's GitHub repositories. A portion of tokens issued are automatically auctioned to bidders by the GitToken contract upon each event.
-
-```- Setting Up a GitHub Web Hook for GitToken (RT/SM)
-- Using Docker image to get started with GitToken (RT/SM)
-- Architecture Overview, flow charts (RT/SM)
-- Incentivizing open source software collaboration (SM/RT)
-- Funding open source software using GitToken (SM/RT)
-- Evaluating Projects & Development using GitToken (SM/RT)
-- Continuous Token Issuance Model (RT/SM -- needs to edited)
-- Using GitToken Software SDKs (RT/SM)
-```
-GitToken + GitHub Work Flows
-
-```- Token Auctions Model
-- GitToken Exchange (For GitToken projects only)```
