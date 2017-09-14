@@ -3,11 +3,11 @@
 # GitToken Whitepaper v0.1
 
 ### Abstract
-GitToken is a decentralized open source funding platform built on top of Ethereum that allows any GitHub repository to issue and distribute tokens on the basis of real contributions. We hope that the ability for contributors to seamlessly fund projects they like and for open source developers to be rewarded for their work will help move the open source community and associated ethos forward.
+GitToken is a decentralized open source funding platform that allows any GitHub repository to reward repository contributors with their own Ethereum ERC20 Tokens. We hope that the ability for contributors to seamlessly fund projects they like and for open source developers to be rewarded for their work will help move the open source community and associated ethos forward.
 
 ### Table of Contents
 * [1. Background and Motivation](#1-background-and-motivation)
-* [2. Features & Getting Started](#2-features)
+* [2. Getting Started](#2-getting-started)
 * [3. GitToken Architecture Overview](#3-gittoken-architecture)
   + [3.1. GitToken Webhook](#31-webhook)
   + [3.2. GitToken CLI](#32-CLI)
