@@ -1,0 +1,77 @@
+// Definition of GitToken Services
+[GitToken CLI  |
+Description: GitToken command line interfaces |
+
+[git token register |
+Description: Register a GitHub organization with GitToken
+]
+[git token terminal |
+Description: Browse and review GitToken projects]
+]
+
+
+[GitToken Contract Event Watcher |
+Description: Watch for registered organization's
+contract events, such as Contributions, Auctions, etc.
+]
+
+[GitToken Database |
+Description: MySql database service for GitToken services |
+Cache and save data from GitToken services
+]
+
+[wss://socket.gittoken.io |
+Description: WebSocket to connect to GitToken
+socket service. Listen to broadcasted, event-driven events.
+]
+
+[https://api.gittoken.io |
+Description: RESTful API for querying GitToken
+data
+]
+
+[https://registry.gittoken.io |
+Description: Endpoint for registering organizations using
+`git token register` CLI command or web app |
+Registration Parameters:
+---
+{String} name      
+{String} symbol 
+{String} organization
+{Unsigned Integer} decimals       
+{String} admin_email
+{String} admin_address
+{String} admin_username
+]
+
+[https://torvalds.gittoken.io | 
+Description: Web3 JSON RPC endpoint for
+GitToken private Ethereum network called Torvalds.
+]
+
+[https://webhook.gittoken.io/${organization} |
+Description: Endpoint for receiving and parsing 
+GitHub webhook events for registered organizations
+]
+
+[GitHub Webhook |
+Description: Send request to GitToken when contribution is made
+for an organization
+]
+
+// Connections of GitToken Services
+[GitToken CLI] Register Organization-> [https://registry.gittoken.io]
+[GitToken CLI] <:-> [https://torvalds.gittoken.io]
+[GitHub Webhook] Send Event Payload<:->[https://webhook.gittoken.io/${organization}]
+[https://registry.gittoken.io] -> [GitToken Database]
+
+[https://webhook.gittoken.io/${organization}] Validate & Cache Events<:-> [GitToken Database]
+[https://webhook.gittoken.io/${organization}] <:->Send Ethereum Transactions [https://torvalds.gittoken.io]
+[GitToken Contract Event Watcher] <:-> [https://torvalds.gittoken.io]
+[GitToken Contract Event Watcher] <:-> [GitToken Database]
+[wss://socket.gittoken.io] <- [https://registry.gittoken.io]
+[wss://socket.gittoken.io] <- [https://webhook.gittoken.io/${organization}]
+[wss://socket.gittoken.io] <- [GitToken Contract Event Watcher]
+[GitToken CLI] <-> [wss://socket.gittoken.io]
+[GitToken CLI] <-> [https://api.gittoken.io]
+[https://api.gittoken.io] <:-> [GitToken Database]
