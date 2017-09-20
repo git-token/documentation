@@ -58,11 +58,11 @@ There are also a few other metrics that have to be considered in light of the fa
 
 **1) What does the token do and what are the token economics?**
 
-[Not everything needs to be a token](https://medium.com/@bryn.bellomy/not-every-app-needs-a-coin-69305aecb43f), but at the moment everything seems to be becoming one. Understanding what a token does and why those functions can’t be managed by an existing token (or to go further, why the platform or service benefits from decentralization) is critical. Note that this isn't to say that tokens are inherently bad - tokens that provide the right incentives and utility can create more robust and stable ecosystems.
+[Not everything needs to be a token](https://medium.com/@bryn.bellomy/not-every-app-needs-a-coin-69305aecb43f). Understanding what a token does and why those functions can’t be managed by an existing token (or to go further, why the platform or service benefits from decentralization) is critical. Note that this isn't to say that tokens are inherently bad - tokens that provide the right incentives and utility can create more robust and stable ecosystems.
 
 As [Nick Tomaino of Rune Capital points out](https://thecontrol.co/on-token-value-e61b10b6175e), there are really four major kinds of tokens: traditional asset tokens, usage tokens, work tokens, and hybrid tokens.
 
-![Four Types of Tokens](images/1-eX9vs2LfnG482mkJ-szjxg.png)
+![Four Types of Tokens](whitepaper/1-eX9vs2LfnG482mkJ-szjxg.png)
 
 Understanding which of these categories (though they're really just one of many ways to partition the ecosystem) can be a useful starting point in defining what a given token is actually meant to do, but fundamentally the end goal is to understand exactly how the token functions in the ecosystem.
 
