@@ -36,7 +36,7 @@ The ecosystem around ICOs has evolved significantly over the past two years, wit
 
 Team is the only metric that can be directly assessed at any stage of a company’s life. It’s hard to know much about a product that hasn’t been built or a market that hasn’t been explored, but before there’s anything there’s a team. In some cases VCs will almost entirely ignore product and market on the assumption that a good team with neither will solve the problem while a bad team with both will squander the opportunity.
 
-The importance of teams isn’t to say that founders need to be a group of MIT graduates with 10 years or more of experience in the domain they’re exploring because [even they can forget to change their passwords](https://www.wired.com/story/enigma-ico-ethereum-heist/). 
+The importance of teams isn’t to say that founders need to be a group of MIT graduates with 10 years or more of experience in the domain they’re exploring because [even they can forget to change their passwords](https://www.wired.com/story/enigma-ico-ethereum-heist/).
 
 However, a good team should always display passion, integrity, adaptability, and grit. Most of these are tired and often nebulous concepts, but they define what you’ll hear from almost any established early-stage VC and (consequently) what you’ll read in almost any ICO report today.
 
@@ -58,11 +58,11 @@ There are also a few other metrics that have to be considered in light of the fa
 
 **1) What does the token do and what are the token economics?**
 
-[Not everything needs to be a token](https://medium.com/@bryn.bellomy/not-every-app-needs-a-coin-69305aecb43f), but at the moment everything seems to be becoming one. Understanding what a token does and why those functions can’t be managed by an existing token (or to go further, why the platform or service benefits from decentralization) is critical. Note that this isn't to say that tokens are inherently bad - tokens that provide the right incentives and utility can create more robust and stable ecosystems.
+[Not everything needs to be a token](https://medium.com/@bryn.bellomy/not-every-app-needs-a-coin-69305aecb43f). Understanding what a token does and why those functions can’t be managed by an existing token (or to go further, why the platform or service benefits from decentralization) is critical. Note that this isn't to say that tokens are inherently bad - tokens that provide the right incentives and utility can create more robust and stable ecosystems.
 
 As [Nick Tomaino of Rune Capital points out](https://thecontrol.co/on-token-value-e61b10b6175e), there are really four major kinds of tokens: traditional asset tokens, usage tokens, work tokens, and hybrid tokens.
 
-![Four Types of Tokens](1-eX9vs2LfnG482mkJ-szjxg.png)
+![Four Types of Tokens](whitepaper/1-eX9vs2LfnG482mkJ-szjxg.png)
 
 Understanding which of these categories (though they're really just one of many ways to partition the ecosystem) can be a useful starting point in defining what a given token is actually meant to do, but fundamentally the end goal is to understand exactly how the token functions in the ecosystem.
 
