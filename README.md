@@ -63,7 +63,7 @@ GitToken can be described at a high level by the chart below. Each box represent
 
 ![Architecture Chart](https://raw.githubusercontent.com/git-token/documentation/master/images/alpha_services_chart.png)
 
-# 3. Token Economics
+# 4. Token Economics
 
 All GitToken contracts are created with an initial supply of zero `0` tokens.
 
