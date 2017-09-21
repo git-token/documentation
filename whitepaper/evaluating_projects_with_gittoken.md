@@ -62,7 +62,7 @@ There are also a few other metrics that have to be considered in light of the fa
 
 As [Nick Tomaino of Rune Capital points out](https://thecontrol.co/on-token-value-e61b10b6175e), there are really four major kinds of tokens: traditional asset tokens, usage tokens, work tokens, and hybrid tokens.
 
-![Four Types of Tokens](whitepaper/1-eX9vs2LfnG482mkJ-szjxg.png)
+![Four Types of Tokens](https://raw.githubusercontent.com/git-token/documentation/master/whitepaper/1-eX9vs2LfnG482mJ-szjxg.png)
 
 Understanding which of these categories (though they're really just one of many ways to partition the ecosystem) can be a useful starting point in defining what a given token is actually meant to do, but fundamentally the end goal is to understand exactly how the token functions in the ecosystem.
 
