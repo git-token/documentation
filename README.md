@@ -11,8 +11,8 @@ GitToken is a decentralized open source funding platform that allows any GitHub 
 * [3. GitToken Architecture Overview](#3-gittoken-architecture)
   + [3.1. GitToken Webhook](#31-webhook)
   + [3.2. GitToken CLI](#32-CLI)
-  + [3.2. GitToken Dashboard](#33-dashboard)
-  + [3.3. GitToken Registry & Exchange](#34-registry)
+  + [3.3. GitToken Dashboard](#33-dashboard)
+  + [3.4. GitToken Registry Exchange](#34-registry)
 * [4. Token Economics](#4-gittoken-economics)
 * [5. Funding Projects with GitToken](#4-gittoken-funding)
   + [5.1. For Projects](#51-funding-project)
@@ -41,3 +41,12 @@ Contributors verify their GitHub identity by authenticating into GitHub using th
 The Ethereum ecosystem has adopted a de facto contract interface for transacting value on top of the Ethereum network, the ERC20 protocol. The ERC20 protocol allows tokens to be exchanged over-the-counter (OTC) with private parties using Ethereum contracts. While the standard is still evolving, many developers have used the ERC20 token to represent utility or rights in their projects and have offered tokens to the public to raise funding for open source development.
 
 GitToken will offer GTK tokens to represent contributions made to the organization's GitHub repositories. A portion of tokens issued are automatically auctioned to bidders by the GitToken contract upon each event.
+
+# Getting Started
+
+# GitToken Architecture
+
+
+GitToken can be described at a high level by the chart below. Each box represents a core components of the service. The arrows between components represent the flow of data: the solid arrows represent requests while the unfilled arrows represent responses.
+
+![Architecture Chart](https://raw.githubusercontent.com/git-token/documentation/master/images/alpha_services_chart.png)
