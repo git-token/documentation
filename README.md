@@ -65,18 +65,27 @@ GitToken can be described at a high level by the chart below. Each box represent
 
 # 4. Token Economics
 
+## Overview
+
 All GitToken contracts are created with an initial supply of zero `0` tokens.
 
 Upon each valid contribution, the total supply of the tokens issued increases relative to the contribution type and corresponding reward value set by the organization.
 
 Additionally, given special events, such as adding a new member to an organization or reaching a milestone, a reserved supply of tokens is created. The purpose of the reserve supply is to allocate a portion of tokens generated for auction. The auctioning of these tokens is determined by the organization’s milestone schedules, which can be set up using GitHub’s existing project management tools.
 
-GitToken's token issuance and distribution model is continuous and its supply is inflationary. Inflationary forces are strongest when the rate of supply increases faster than the real output of the per unit value. This may occur when tokens are issued for events that have not been realized or hold intangible value. For example, for repositories that enable it, issuing tokens for `watch` events is probably the least difficult or easiest way to earn tokens and holds intangible value (e.g. value in the form of the community's interest in the project).
+Tokens issued by the GitToken service token are issued continuously and their supplies are inflationary. Inflationary forces are strongest when the rate of supply increases faster than the real output of the per unit value. This may occur when tokens are issued for events that have not been realized or hold intangible value. For example `watch` events are probably the easiest way to earn tokens. GitToken does not target a rate of change in the token supply or an inflation rate automatically. However, as a project matures, the rate of change in the token supply should become stable.
 
-Events with intangible value can easily become an attack surface if the frequency of watch events is abnormally high relative to the frequency of other contribution events.
-To mitigate this scenario and control the rate of token supply increase for intangible events, the GitToken default reward values of these intangible events should always be much smaller than rewards for events representing tangible value, like `commit`, `create`, and `pull_request` events.
+`watch` and similar events are easy in part because they have intangible value (e.g. value in the form of the community's interest in the project). Events with intangible value can easily become an attack surface if their frequency is abnormally high relative to other contribution events. To mitigate this scenario and control the rate of token supply increase for intangible events, the GitToken default reward values of intangible events is much smaller than rewards for events representing tangible value, like `commit`, `create`, and `pull_request` events.
 
-A full list of the default [GitHub event](https://developer.github.com/webhooks/#events) reward values are as follows:
+## Setting Custom Reward Values
+
+Any organization using the GitToken service can fully customize their event rewards. If so desired, an organization could set all reward values to `0` and only issue bonuses as described later on.
+
+While this is technically allowed by the GitToken contract via the `setRewardValue()` and `setReservedValue()` methods, it is encouraged to consider the impact of setting arbitrary reward values for events, and consider the ramifications of such reward values in the context of the goals and mission of the project before changing the default values.
+
+We hope that as projects test GitToken on our private network and Ropsten we can iterate on our default values to find those enabling the most productive repositories.
+
+For completeness, a full list of [GitHub event](https://developer.github.com/webhooks/#events) and their default reward values are as follows:
 
 |Event | Reward Value | Description |
 |---|---|---|
