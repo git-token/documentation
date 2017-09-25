@@ -1,6 +1,6 @@
 **Note:** This document is under active development. If you have any questions, comments, or suggestions feel free to reach out!
 
-# GitToken Whitepaper v0.1
+# GitToken Guide v0.1
 
 ## Abstract
 GitToken is a decentralized open source service that allows any GitHub repository to reward repository contributors with their own Ethereum ERC20 tokens. We hope that the ability for contributors to seamlessly fund projects they like and for open source developers to be rewarded for their work will help move the open source community and associated ethos forward.
@@ -23,7 +23,7 @@ GitToken is a decentralized open source service that allows any GitHub repositor
 * [7. GitToken Multiverse](#4-gittoken-muiltiverse)
 
 
-# 1. Background and Motivation
+# 1. Background and Overview
 Over the past 9 years GitHub has quickly become the largest host of source code in the world, managing nearly 57 million repositories and 100 million pull requests for over 26 million users. As the open source movement continues to gain momentum so to does the number of individual contributors to these repositories. In some cases repositories have over 10,000 independent contributors working on a volunteer basis.
 
 At the same time, the emergence of cryptographic networks and assets, such as Ethereum, has created new protocols for sending and managing value. Ethereum is a cryptographic network for running distributed programs, allowing users to send peer-to-peer transactions and interact with smart contracts deployed on the global network.
@@ -126,3 +126,47 @@ For completeness, a full list of [GitHub event](https://developer.github.com/web
 | watch | 100 | Any time a User stars a Repository.|
 
 Tokens are issued and distributed via the `rewardContributor()` and `_rewardContributor()` contract methods. The full contract can be found [here](https://github.com/git-token/contracts/blob/master/contracts/GitToken.sol).
+
+# 5. Funding Projects with GitToken
+
+
+## For Projects
+
+Once a project's integrated GitToken into its workflow and has contributors receiving the rewards specified the first priority is to make sure contributors are really getting rewarded for the work they're doing, and that requires fundraising.
+
+While code often speaks for itself, there are a few other things you can do to help ensure your project gets traction. Note that many of these are obvious, but in our estimation worth restating.
+
+**Summarize your vision**
+
+What does your project do? It sounds like an easy question to answer but many projects don't answer it. Here are some succinct examples from some of the most popular open source projects on GitHub (a larger list can be found [here](https://gitstar-ranking.com/)):
+
+>The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+-- freeCodeCamp
+
+>The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
+-- Bootstrap
+
+>A declarative, efficient, and flexible JavaScript library for building user interfaces.
+-- React
+
+**Foster community**
+
+Open source is all about collaboration and collaboration goes hand in hand with community. Let your community know how they can help. GitToken has a [community section](https://github.com/git-token/community) for more general questions and comments so that anyone can get involved.
+
+Stay engaged in discussions your community. Not only does it help ensure that everyone is on the same page regarding the current state of the project but it allows you to ensure the direction of the project is more accurately shaped by the community's wants and needs.
+
+**Establish project guidelines**
+
+Guidelines help the community organize itself without constant guidance from project maintainers.
+
+In our case, we've set up a `CONTRIBUTING.md` document to help contributors get an idea of current guidelines. Our goal is to outline the workflows we are currently following and hence the workflows that contributors might also be encouraged to follow in order to create the least friction. Currently this involves working on the basis of a [feature branching model](http://nvie.com/posts/a-successful-git-branching-model/).
+
+Our `CONTRIBUTING.md` also includes a Code of Conduct that explicitly states what is and is not encouraged or tolerated in the community. Having a Code of Conduct and calling out bad behavior at every step is critical to having an engaged and productive community.
+
+## For Contributors
+
+Contributors are the lifeblood of open source. In GitToken enabled projects contributors can provide either their time or donations to projects as they wish.
+
+Contributors offering their time just need to make sure they follow all the guidelines a project has outlined. Note that these may be different than the guidelines set by GitToken itself.
+
+Contributors donating directly to projects should make sure to conduct due diligence on their own and using GitToken tools like the terminal to ensure that the project is meeting its goals. No one wants to donate to organizations that are likely to misspend the funds, [which are more pervasive than you'd think](http://www.tampabay.com/americas-worst-charities/).
