@@ -14,11 +14,11 @@ GitToken is a decentralized open source service that allows any GitHub repositor
   + [3.3. Dashboard](#33-dashboard)
   + [3.4. Registry & Exchange](#34-registry-&-exchange)
 * [4. Token Economics](#4-token-economics)
-* [5. Funding Projects with GitToken](#4-gittoken-funding)
+* [5. Funding Projects with GitToken](#5-funding-projects-with-gittoken)
   + [5.1. For Projects](#51-funding-project)
   + [5.2. For Contributors](#52-funding-contributor)
-* [6. Project Analysis & Comparison](#4-gittoken-project-analysis)
-* [7. GitToken Multiverse](#4-gittoken-muiltiverse)
+* [6. Project Analysis & Comparison](#6-project-analysis-and-comparison)
+* [7. GitToken Multiverse](#7-gittoken-muiltiverse)
 
 
 # 1. Background and Overview
@@ -177,4 +177,4 @@ Contributors donating directly to projects should make sure to conduct due dilig
 
 GitToken isn't about a single open source project, it's about the open source ecosystem. To that end we wanted to make sure there was a way to allow anyone to search for and analyze projects. We hope that this will help the open source community understand the underlying value behind what's being built and incentivize the community to seek out and contribute to projects that the community values. As a starting point, we've opted to make this possible via the GitToken Terminal, part of the GitToken CLI.
 
-Users who have installed GitToken using `npm i -g git-token@alpha` will be able to run `git token terminal` to explore the project registry and see key statistics around the project's associated token.
+Users who have installed GitToken using `npm i -g git-token@alpha` will be able to run `git token terminal` to explore GitToken enabled projects and see key statistics around their associated tokens.
