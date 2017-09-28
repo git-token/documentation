@@ -18,8 +18,6 @@ GitToken is a decentralized open source service that allows any GitHub repositor
   + [5.1. For Projects](#51-funding-project)
   + [5.2. For Contributors](#52-funding-contributor)
 * [6. Project Analysis & Comparison](#4-gittoken-project-analysis)
-  + [6.1. Finding Projects](#61-finding-projects)
-  + [6.1. Analyzing Projects](#62-analyzing-projects)
 * [7. GitToken Multiverse](#4-gittoken-muiltiverse)
 
 
@@ -49,19 +47,23 @@ GitToken isn't quite ready yet, but we're aiming for an alpha release on a priva
 You can get started now by registering your organization in two simple steps using the GitToken CLI
 
 1) Using npm (or yarn), install GitToken
-`npm i -g git-token`
+`npm i -g git-token@alpha`
 
 2) Register your account by typing
 `git token register`
-and following the instructions provided. This will set up your tokens and webhook for you.
+
+3) Follow the instructions provided to set up your tokens and webhook
 
 Note that to register you'll need a GitHub organization and personal access token, which you can get by going to Settings > Developer Settings > Personal Access Tokens.
+
+The GIF below provides a brief overview of what the process above should look like.
 
 # 3. GitToken Architecture
 
 GitToken can be described at a high level by the chart below. Each box represents a core component of the service. The arrows between components represent the flow of data: the solid arrows represent requests while the unfilled arrows represent responses.
 
 ![Architecture Chart](https://raw.githubusercontent.com/git-token/documentation/master/images/alpha_services_chart.png)
+
 
 # 4. Token Economics
 
@@ -170,3 +172,9 @@ Contributors are the lifeblood of open source. In GitToken enabled projects cont
 Contributors offering their time just need to make sure they follow all the guidelines a project has outlined. Note that these may be different than the guidelines set by GitToken itself.
 
 Contributors donating directly to projects should make sure to conduct due diligence on their own and using GitToken tools like the terminal to ensure that the project is meeting its goals. No one wants to donate to organizations that are likely to misspend the funds, [which are more pervasive than you'd think](http://www.tampabay.com/americas-worst-charities/).
+
+# 6. Project Analysis and Comparison
+
+GitToken isn't about a single open source project, it's about the open source ecosystem. To that end we wanted to make sure there was a way to allow anyone to search for and analyze projects. We hope that this will help the open source community understand the underlying value behind what's being built and incentivize the community to seek out and contribute to projects that the community values. As a starting point, we've opted to make this possible via the GitToken Terminal, part of the GitToken CLI.
+
+Users who have installed GitToken using `npm i -g git-token@alpha` will be able to run `git token terminal` to explore the project registry and see key statistics around the project's associated token.
