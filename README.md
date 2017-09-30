@@ -58,6 +58,8 @@ Note that to register you'll need a GitHub organization and personal access toke
 
 The GIF below provides a brief overview of what the process above should look like.
 
+![git token register](https://github.com/git-token/media/blob/master/gifs/git-token-register.gif)
+
 # 3. GitToken Architecture
 
 GitToken can be described at a high level by the chart below. Each box represents a core component of the service. The arrows between components represent the flow of data: the solid arrows represent requests while the unfilled arrows represent responses.
