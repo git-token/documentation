@@ -3,7 +3,7 @@
 # GitToken Guide v0.1
 
 ## Abstract
-GitToken is a decentralized open source service that allows any GitHub repository to reward repository contributors with their own distinct Ethereum ERC20 tokens. We hope that the ability for contributors to seamlessly fund projects they like and for open source developers to be rewarded for their work will help move the open source community and associated ethos forward.
+GitToken is a decentralized open source service that allows any GitHub organization to reward contributors with their own distinct Ethereum ERC20 tokens based on repository events. We hope that the ability for contributors to seamlessly fund projects they like and for open source developers to be rewarded for their work will help move the open source community and associated ethos forward.
 
 ### Table of Contents
 * [1. Background and Motivation](#1-background-and-motivation)
