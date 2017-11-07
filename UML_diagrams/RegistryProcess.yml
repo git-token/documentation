@@ -1,0 +1,94 @@
+// Definitions
+
+[<actor> Organization Admin]
+[<actor> Organization Contributor]
+[<transceiver>GitToken Signer Service]
+
+[<input> GitToken UI ]
+
+// GitHub Organization
+[GitHub Organization |
+(Open Source) Organization hosted on GitHub
+---
+https://github.com/<some-organization>
+|]
+
+[GitToken WebHook Manager|
+webhook.gittoken.io/<some-organization>
+|]
+
+[<instance> GitTokenRelay.sol |
+Torvalds GitToken Relay Contract
+|]
+
+[<instance> GitTokenRegistryRelay.sol |
+Torvalds GitToken Registry Relay Contract
+|]
+
+[<instance> GitToken.sol |
+Ethereum ERC20 (EIP20);GitToken contract for GitHub Organization |
+redeemToken(;uint _value;) isMember public constant (bool success)
+---
+
+|
+
+|]
+
+[GitToken Relay Manager || ]
+
+[<instance> GitTokenRegistry.sol |
+verifyOrganization(;string _organization, ;string _username, ;address _admin;) signer public returns(bool success)
+---
+;Used by the GitToken Signer during the organization registration process |
+registerToken(;string _organization, ;string _name, ;string _symbol, ;uint256 _decimals, ;address _admin, ;string _username;) payable verified unregistered public returns (bool success)
+---
+; Verified Organizations may register their organizations using this method.
+; If the organization is not verified, then the transaction will fail
+|]
+
+[GitToken Registry RESTful API |
+registry.gittoken.io/api/v1/verify/:organization
+---
+request body: ;{ ;username;organization;gitHubOAuthToken;address ;}
+---
+Server-side verification of user;
+consider additional authentication
+;using github auth url callback
+|]
+
+// Interactions
+
+
+[Organization Admin] -> [<input> GitToken UI ]
+
+[<input> GitToken UI ] -> [GitToken Registry RESTful API]
+
+[<input> GitToken UI ] registerToken()-> [GitTokenRegistry.sol]
+
+[GitToken Registry RESTful API] - [<choice> Validated ]
+
+[Validated ] yes- [GitToken Signer Service]
+
+[Validated ] no- [GitToken Registry RESTful API]
+
+[GitToken Signer Service] -verifyOrganization() [GitTokenRegistry.sol]
+
+[GitTokenRegistry.sol] creates new -> [GitToken.sol]
+
+[Organization Contributor] ->contribute [GitHub Organization]
+
+[GitHub Organization] -> [GitToken WebHook Manager]
+
+[GitToken WebHook Manager] -> [GitToken Signer Service]
+[GitToken Relay Manager] -> [GitToken Signer Service]
+
+
+[GitToken Signer Service] -> [GitTokenRegistryRelay.sol]
+
+[GitToken Signer Service] -> [GitTokenRelay.sol]
+
+[Organization Contributor] -> [GitToken UI]
+[GitToken UI] -> [GitTokenRelay.sol]
+[GitToken UI] ->redeemToken() [GitToken.sol]
+[GitToken UI] -> [GitTokenRelay.sol]
+[GitToken UI] -> [GitToken.sol]
