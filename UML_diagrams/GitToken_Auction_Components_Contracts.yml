@@ -1,0 +1,57 @@
+#.contracttorvalds: center fill=#8b95bf bold
+#.contractethereum: center fill=#fef bold
+#.uicomponent: fill=#cdc center bold
+#.auctionservice: fill=#fff center bold
+
+#.contributor: visual=actor fill=#21044f stroke=#21044f
+#.signer: visual=actor fill=#f95d02
+
+[ <contracttorvalds> Auction Contract (Torvalds) |
+	Purpose(s)
+    | Run the entire auction on the Torvalds network. ||
+    Implementation / Methods |
+	[<package> newAuction(uint auctionDetails) signer returns (bool)
+    	// Array of uint values
+        ---
+        Uint Array Values
+        ---
+    	0: auctionRound,
+        1: reservedSupply,
+        2: minimumBid,
+        3: startDate,
+        4: endDate,
+        5: lockedPeriod
+    ]
+]
+[ <contractethereum> Auction Contract (Ethereum) | Purpose(s) |
+    - Lock initial Ether for bidding (think of it as a credit account, of sorts). Essentially this is your maximum bid: 1 Token == total amount in credit.
+    However, in practice this should represent a maximum offer, whereby the quantity X price is specified in the offer. (e.g. 10,000 tokens == total amount)
+    -
+  | Implementations / Methods |
+   -
+]
+[ <uicomponent> Auction UI Component |
+	| Web Worker:
+    	- Child process for contract event listening and data analysis
+	| React Components
+    	- Submit Bid
+        - Determine current highest big, wtd avg. bid, lowest bid
+        - Chart bid history via contract events
+        - Register on both Torvalds and Main Ethereum
+        network for auction participation
+]
+[ <auctionservice> Auction Service |
+	| - Perform side-chain operations between Torvalds-Ethereum networks
+      - Validate auction participants on both networks
+      - Review
+    | [ <signer> Signer |
+    | - Sign transactions for contracts methods ]
+]
+
+
+[<contributor> Contributor ] <-> [ <uicomponent> Auction UI Component || ]
+[ <uicomponent> Auction UI Component || ] <-> [ <contracttorvalds> Auction Contract (Torvalds) || ]
+[ <uicomponent> Auction UI Component || ] <-> [ <contractethereum> Auction Contract (Ethereum) || ]
+[ <uicomponent> Auction UI Component || ] <-> [ <auctionservice> Auction Service || ]
+[ <contracttorvalds> Auction Contract (Torvalds) || ] <-> [ <auctionservice> Auction Service || ]
+[ <contractethereum> Auction Contract (Ethereum) ] <-> [ <auctionservice> Auction Service || ]

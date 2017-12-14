@@ -1,0 +1,21 @@
+OrgAdmin->Registry: Verify Organization (requires GitHub OAuth Token)
+
+Registry->Signer: Sign Transaction
+Signer->GitTokenRegistry.sol: verifyOrganization()
+GitTokenRegistry.sol-->Signer: Listen for Organization Verified Event
+
+Signer->GitToken.sol: creditToken()
+Signer-->Registry: Transaction Receipt
+Registry-->OrgAdmin: Transaction Receipt
+note over Registry, OrgAdmin: Verification complete
+
+OrgAdmin->GitTokenRegistry.sol: registerToken()
+GitTokenRegistry.sol-->OrgAdmin: Listen for TokenRegistered Event
+GitTokenRegistry.sol->GitToken.sol: new GitToken
+note over OrgAdmin, GitTokenRegistry.sol: Registration complete
+note left of Registry: Listen for TokenRegistered Events
+
+OrgAdmin->GitToken.sol: getOrganization()
+GitToken.sol-->OrgAdmin: Return organization name from newly created contract
+note left of GitToken.sol: Emits Events
+note left of GitTokenRegistry.sol: Emits Events
