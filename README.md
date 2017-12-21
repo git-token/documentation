@@ -1,18 +1,17 @@
 **Note:** This document is under active development. If you have any questions, comments, or suggestions feel free to reach out!
 
-# GitToken Guide v0.1
+# GitToken Guide v0.2
 
 ## Abstract
 GitToken is a decentralized open source service that allows any GitHub organization to reward contributors with their own distinct Ethereum ERC20 tokens based on repository events. We hope that the ability for contributors to seamlessly fund projects they like and for open source developers to be rewarded for their work will help move the open source community and associated ethos forward.
 
 ### Table of Contents
-* [1. Background and Motivation](#1-background-and-motivation)
+* [1. Background and Overview](#1-background-and-Overview)
 * [2. Getting Started](#2-getting-started)
 * [3. GitToken Architecture Overview](#3-gittoken-architecture)
   + [3.1  Webhook](#31-webhook)
   + [3.2. Command Line Interface](#32-command-line-interface)
   + [3.3. Dashboard](#33-dashboard)
-  + [3.4. Registry & Exchange](#34-registry-&-exchange)
 * [4. Token Economics](#4-token-economics)
 * [5. Funding Projects with GitToken](#5-funding-projects-with-gittoken)
   + [5.1. For Projects](#51-funding-project)
@@ -22,29 +21,37 @@ GitToken is a decentralized open source service that allows any GitHub organizat
 
 
 # 1. Background and Overview
-Over the past 9 years GitHub has quickly become the largest host of source code in the world, managing nearly 57 million repositories and 100 million pull requests for over 26 million users. As the open source movement continues to gain momentum so to does the number of individual contributors to these repositories. In some cases repositories have over 10,000 independent contributors working on a volunteer basis.
+Over the past 9 years GitHub has quickly become the largest host of source code in the world, managing nearly 57 million repositories and 100 million pull requests for over 26 million users. As the open source movement continues to gain momentum so does the number of individual contributors to these repositories. In some cases repositories have over 10,000 independent contributors working mostly on a volunteer basis.
 
-At the same time, the emergence of cryptographic networks and assets, such as Ethereum, has created new protocols for sending and managing value. Ethereum is a cryptographic network for running distributed programs, allowing users to send peer-to-peer transactions and interact with smart contracts deployed on the global network.
+At the same time, the emergence of cryptographic networks like Ethereum has created new and exciting possibilities for how value is managed and transferred by allowing users to build decentralized applications using smart contracts. Smart contracts are software applications written in a high-level scripting language and compiled into byte code to be run on a version of the Ethereum Virtual Machine (EVM). The EVM interprets the byte code instruction set and translates the program into machine code to be executed.
 
-Ethereum smart contracts are software applications written in a high-level scripting language and compiled into byte code to be run on a version of the Ethereum Virtual Machine (EVM). The EVM interprets the byte code instruction set and translates the program into machine code to be executed.
+GitToken combines the work flows of the Git version control system leveraged by GitHub and the Ethereum network to provide a set of open-source software tools that enable any GitHub organization to issue their own distinct ERC20 tokens (e.g. ApacheTokens) to incentivize and reward contributors, and monitor the fundamentals of their projects.
 
-GitToken combines the work flows of the Git version control system leveraged by GitHub's web-based source code management platform and the Ethereum network to provide a set of open-source software tools that enable any GitHub user to issue their own ERC20 tokens to incentivize and reward contributors, and monitor the fundamentals of their projects.
+Contributions are mapped to GitHub web hook events that include but are not limited to, creating issues, committing code, merging branches, forking repositories, and reviewing code. GitToken provides both a hosted service and a Docker image so that anyone can configure and deploy their own GitToken instance.
 
-Contributions are mapped to GitHub web hook events, and include but are not limited to, creating issues, committing code, merging branches, forking repositories, and reviewing code. GitToken provides a Docker image to configuring and deploy a server for listening to GitHub web hook events.
-
-Contributors receive tokens through interacting with an organization that has configured a GitToken server instance and has setup a GitHub web hook. When a contributor creates a new event, their GitHub login username is provided in the web hook request. Each username is mapped to an Ethereum address in the GitToken contract.
+Contributors earn tokens through interacting with a GitToken-enabled organization. In short, whenever a contributor takes an action on GitHub, their GitHub login username is provided in the web hook request and that username is mapped to an Ethereum address in the GitToken contract.
 
 Contributors verify their GitHub identity by authenticating into GitHub using their Open Authorization (OAuth) token credentials. Contributors authenticate themselves with the GitToken token contract using the GitToken server authentication URL associated with an organization. If a contributor has not yet verified their identity with the contract, their contribution rewards will be held by the contract until their identity has been verified.
 
-The Ethereum ecosystem has adopted a de facto contract interface for transacting value on top of the Ethereum network, the ERC20 protocol. The ERC20 protocol allows tokens to be exchanged over-the-counter (OTC) with private parties using Ethereum contracts. While the standard is still evolving, many developers have used the ERC20 token to represent utility or rights in their projects and have offered tokens to the public to raise funding for open source development.
+GitToken enforces the use of certain core GitHub features like milestones. Tokens that have been earned are only distributed at milestone events to help incentivize maintainers and contributors focus and come to consensus on the long term goals of their project. We hope that incentivizing contributors to stick with projects for the long term will better sustain the health of GitToken-enabled projects, and reduce the burden on maintainers as more contributors become engaged enough to share their responsibilities.
 
-GitToken will offer GTK tokens to represent contributions made to its GitHub repositories. A portion of tokens issued are automatically auctioned to bidders by the GitToken contract upon each event.
+The Ethereum ecosystem has adopted a de facto contract interface for transacting value on top of the Ethereum network, the ERC20 protocol. The ERC20 protocol allows tokens to be exchanged over-the-counter (OTC) with private parties using Ethereum contracts. While the standard is still evolving, many developers have used the ERC20 token to represent utility or rights in their projects and have offered tokens to the public to raise funding for open source development. GitToken may or may not provide tools to make it easy for open source projects to unlock this functionality for their reward points down the road.
+
+Like any other repository, GitToken will offer its own reward points (GTK) for contributions made to its GitHub repositories.
 
 # 2. Getting Started
 
-GitToken isn't quite ready yet, but we're aiming for an alpha release on a private network, the Torvalds network, at the end of the month.
+We’ve tried to make it as simple as possible to get started with GitToken:
 
-You can get started now by registering your organization in two simple steps using the GitToken CLI
+1) Install MetaMask and set up an Ethereum address
+
+2) Go to alpha.gittoken.io and link your Ethereum address to your GitHub account
+
+Once you’re registered you’ll be able to start receiving tokens from GitToken enabled organizations immediately or set up a web hook for your own organization in one click. Tokens are earned and distributed whenever an action takes place on the repository, and are distributed once the milestone event those actions are working towards is complete.
+
+## Using the Command Line interface [ON HOLD]
+
+The GitToken CLI is a way for you to create and manage your GitToken instance directly where you work.
 
 1) Using npm (or yarn), install GitToken
 `npm i -g git-token@alpha`
@@ -52,7 +59,7 @@ You can get started now by registering your organization in two simple steps usi
 2) Register your account by typing
 `git token register`
 
-3) Follow the instructions provided to set up your tokens and webhook
+3) Follow the instructions provided to set up your tokens and web hook
 
 Note that to register you'll need a GitHub organization and personal access token, which you can get by going to Settings > Developer Settings > Personal Access Tokens.
 
@@ -60,12 +67,11 @@ The GIF below provides a brief overview of what the process above should look li
 
 ![git token register](https://github.com/git-token/media/blob/master/gifs/git-token-register.gif)
 
-# 3. GitToken Architecture
+# 3. How it Works
 
-GitToken can be described at a high level by the chart below. Each box represents a core component of the service. The arrows between components represent the flow of data: the solid arrows represent requests while the unfilled arrows represent responses.
+GitToken can be described at a high level by the chart below. Each box represents a core component of the service. The arrows between components represent the flow of data - the solid arrows represent requests while the unfilled arrows represent responses.
 
 ![Architecture Chart](https://raw.githubusercontent.com/git-token/documentation/master/images/alpha_services_chart.png)
-
 
 # 4. Token Economics
 
@@ -133,7 +139,6 @@ Tokens are issued and distributed via the `rewardContributor()` and `_rewardCont
 
 # 5. Funding Projects with GitToken
 
-
 ## For Projects
 
 Once a project's integrated GitToken into its workflow and has contributors receiving the rewards specified the first priority is to make sure contributors are really getting rewarded for the work they're doing, and that requires fundraising.
@@ -145,12 +150,15 @@ While code often speaks for itself, there are a few other things you can do to h
 What does your project do? It sounds like an easy question to answer but many projects don't answer it. Here are some succinct examples from some of the most popular open source projects on GitHub (a larger list can be found [here](https://gitstar-ranking.com/)):
 
 >The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+
 -- freeCodeCamp
 
 >The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
+
 -- Bootstrap
 
 >A declarative, efficient, and flexible JavaScript library for building user interfaces.
+
 -- React
 
 **Foster community**
@@ -173,7 +181,7 @@ Contributors are the lifeblood of open source. In GitToken enabled projects cont
 
 Contributors offering their time just need to make sure they follow all the guidelines a project has outlined. Note that these may be different than the guidelines set by GitToken itself.
 
-Contributors donating directly to projects should make sure to conduct due diligence on their own and using GitToken tools like the terminal to ensure that the project is meeting its goals. No one wants to donate to organizations that are likely to misspend the funds, [which are more pervasive than you'd think](http://www.tampabay.com/americas-worst-charities/).
+Contributors donating directly to projects should make sure to conduct due diligence on their own and using GitToken tools like the terminal to ensure that the project is meeting its goals. No one wants to donate to organizations that are likely to misspend the funds.
 
 # 6. Project Analysis and Comparison
 
